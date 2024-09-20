@@ -64,6 +64,14 @@
     border-color: rgb(168, 167, 167);
 }
 
+#amunt_border2{
+    margin-left: 27px;
+    border-width: 2px; 
+    width: 340px; 
+    margin-top: 15px;
+    border-color: rgb(168, 167, 167);
+}
+
 #amunt_subtex2{
     margin-left: 30px;
     padding-top: 0px;
@@ -77,6 +85,8 @@
     height: 50px; 
     margin-left: 180px; 
     margin-top: -20px; 
+    position: relative; 
+    z-index: 10;
     background-color: rgb(43, 64, 253); 
     border-radius: 100%;
     /* border-style: double; */
@@ -94,13 +104,72 @@
 
 }
 
-#amount_subbox1{
+#amount_subbox3{
 
     width: 300px; 
-    height: 125px; 
+    height: 70px; 
     margin-left: 50px; 
-    margin-top: 50px; 
+    margin-top: -20px; 
     background-color: rgb(46, 46, 46); 
     border-radius: 15px;
     border: none !important
+}
+
+#amount_subtex3{
+    margin-left: 30px;
+    padding-top: 22px;
+    font-size: 18px;
+    color: white;
+}
+
+#amount_last{
+    margin-left: 25px;
+    padding-top: 175px;
+}
+
+#am_last_fn{
+    color: white;
+    font-size: 18px;
+}
+
+#last_fn{
+    padding: 5px;
+    font-size: 25px;
+    color: rgb(0, 225, 255);
+}
+
+#amount_last2{
+    margin-left: 25px;
+}
+
+#am_last_fn2{
+    color: white;
+    font-size: 15px;
+}
+
+#back_bt{
+    width: 150px;
+    height: 45px;
+    margin-top: 33px;
+    background-color: rgb(112, 112, 112);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#payment_bt{
+    width: 150px;
+    height: 45px;
+    margin-top: -45px;
+    margin-left: 250px;
+    background-color: rgb(0, 225, 255);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }

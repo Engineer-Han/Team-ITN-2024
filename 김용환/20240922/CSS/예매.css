@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 영화, 극장, 시간 전체영역 */
+.reservation-container{
+    border: 10px;
+}
+.reservation-container {
+    display: flex; /* Flexbox를 사용 */
+}
+
+/* <!-- 예매 날짜 선택 영역 --> */
+/* timeschedule */
+
+
+/* 날짜 선택 앞,뒤 버튼 */
+#time-button{
+    background-color: rgb(253, 253, 253);
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+
+/* 영화 영역 전체 */
+.movie-reserve-area{
+    width: 300px; /* 원하는 너비 설정 */
+    height: 450px; /* 원하는 높이 설정 */
+    margin-right: 20px;
+    margin-left: 70px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+/* <!-- 영화: 전체/큐레이션 버튼 --> */
+.movie-all{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* <!-- 영화 리스트! --> */
+.movie-list{
+    width: 250px;
+    height: 275px;
+    overflow-y: scroll;
+    margin-left: 25px;
+}
+
+/* <!-- 영화 선택시 이벤트 --> */
+.movie-box{
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+/* 극장선택 영역 */
+.theater-choice{
+border-style: solid;
+width: 350px;
+height: 450px;
+}
+
+/* 극장 메뉴/리스트 합체 */
+.theaterflex{
+display: flex;
+}
+
+/* 극장버튼 */
+.theater-choice-botton{
+    text-align: center;
+   
+    
+}
+
+.theater-choice-botton2{
+    text-align: center;
+    
+    
+}
+/* <!-- 극장리스트 --> */
+.theater-list{
+    overflow-y: scroll;
+    width: 135px;
+    font-size: small;
+    height: 275px;
+    margin-left: 20px;
+    border-style: solid;
+    
+    
+}
+
+.theater-list2{
+    overflow-y: scroll;
+    width: 135px;
+    font-size: small;
+    height: 275px;
+    margin-left: 20px;
+    border-style: solid;
+}
+
+/* <!-- 극장 선택시 상호작용 --> */
+.theater-box{
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+
+
+
+
+
+/* 시간 */
+.time-choice{
+
+width: 700px;
+height: 450px;
+margin-left: 20px;
+border-style: solid;
+border-radius: 5px;
+}
+
+.Day-choice{
+    
+    
+    margin-left: 15px;
+    text-align: center;
+    border-style: solid;
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+.time-select{
+    margin-left: 20px;
+    text-align: center;
+    width: 660px;
+    overflow-y: scroll;
+    height: 350px;
+    border-style: solid;
+    margin-top: 10px;
+}   
+
+
+

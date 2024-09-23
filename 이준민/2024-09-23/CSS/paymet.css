@@ -1,0 +1,39 @@
+
+/* 카드 텍스트 */
+#card_text{
+    margin-top: 160px;
+    margin-left: 300px;
+}
+
+/* 무통장 버튼 */
+#bank_book_bt{
+
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+/* 은행명 */
+#bank_name{
+    margin-bottom: 15px;
+    
+}
+
+/* 카드 결제 설명 */
+#creditCardSection
+{
+    display: none;
+    margin-left: 400px;
+}
+
+/* 무통장 결제 설명 */
+#creditbank_bookSection{
+    display: none;
+    margin-left: 400px;
+    /* margin-bottom: 100px; */
+}
+
+/* 주의사항 */
+.notandum{
+    font-weight: bold;
+    margin-left: -110px;
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/05_kwon_discount.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- 헤더 -->
+      <nav id="nav1" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              class="collapse navbar-collapse"
+              id="navbarSupportedContent"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 100%;
+              "
+            >
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"
+                style="
+                  list-style: none;
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: center;
+                  padding: 0;
+                  margin: 0;
+                  font-size: 25px;
+                "
+              >
+                <li class="nav-item"><a class="nav-link" href="#">영화</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">예매</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">극장</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><img
+                      style="
+                        width: 200px;
+                        height: 140px;
+                        margin: 0px;
+                        padding: 0px;
+                      "
+                      src="../img/ITN MOVIES.jfif"
+                      alt="itn movies"
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">이벤트</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">스토어</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">혜택</a></li>
+              </ul>
+            </div>
+
+            <ul
+              class="nav-login"
+              style="padding-top: 5px; font-size: 15px; position: absolute"
+            >
+              <a href="#" class="nav-item">고객센터</a>
+              <a href="#" class="nav-item">로그인</a>
+              <a href="#" class="nav-item">회원가입</a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <script>
+        $(function () {
+          // 네비게이션 바의 배경색을 검정색으로, 글자색을 흰색으로 설정
+          $("#nav1").css("background-color", "rgb(0, 12, 26)");
+          $("#nav1 a").css("color", "white");
+        });
+      </script>
+
+      <style>
+        /* 네비게이션 항목 가로 정렬 및 링크 스타일 */
+        .navbar-nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: center; /* 가운데 정렬 */
+        }
+        .navbar-nav .nav-link {
+          color: white !important; /* 링크 글자 흰색 */
+          margin-right: 40px; /* 항목 간 간격 */
+        }
+
+        /* 로그인 및 회원가입 상단 오른쪽 정렬 */
+        .nav-login {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 10px;
+        }
+        .nav-login a {
+          color: white !important;
+        }
+      </style>
+      <h1>ITN MOVIE 카드 할인정보</h1>
+
+      <div class="card mb-3" style="max-width: 1500px; margin: 0 auto">
+        <img
+          src="../img/discount3.jpg"
+          class="card-img-top"
+          alt="..."
+          style="height: 300px; object-fit: cover"
+        />
+        <div class="card-body">
+          <h5 class="card-title">ITN 카드로 할인받자</h5>
+          <p class="card-text">
+            ITN카드로 결제시 최대 10%할인과 포인트 적립까지!
+          </p>
+          <p class="card-text">
+            <small class="text-muted">2024.01.01 ~ 2099.01.01</small>
+          </p>
+        </div>
+      </div>
+
+      <!-- 캐러셀 콘텐츠 -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+        style="
+          width: 30%;
+          margin: 0 auto;
+          margin-top: 120px;
+          margin-bottom: 180px;
+        "
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/discount8.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <p>ITN MOVIE 추첨이벤트</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../img/discount6.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <p>예매 인증하고 동물원 티켓얻자!</p>
+              <h5>안내 페이지 바로가기</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../img/discount7.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <span class="text-muted text-decoration-line-through"
+                >종료된 이벤트
+              </span>
+              <h5>안내 페이지 바로가기</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- 카드그룹 -->
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="../img/discount9.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <a href="#" h5 class="card-title">안내 페이지 바로가기</a>
+              <p class="card-text">ITN BANK 신규 가입하고 5만 포인트 받자!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../img/discount10.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="text-muted text-decoration-line-through"
+                >종료된 이벤트
+              </span>
+
+              <p class="card-text">ITN 통신 신규가입하고 10만 포인트 받자!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <nav id="nav1" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div style="border-bottom: solid white 10px"></div>
+          <div class="collapse navbar-collapse" id="navbarFooter">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"
+              style="margin-bottom: 0px; padding-top: 30px; font-size: 20px"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white">회사소개</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white">윤리경영</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white">이용약관</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white"
+                  >개인정보처리방침</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="company-info"
+        style="
+          display: flex;
+          align-items: center;
+          background-color: rgb(0, 12, 26);
+          justify-content: center;
+        "
+      >
+        <a class="nav-link" href="#">
+          <img
+            style="width: 120px; height: 94px; margin: 0; padding: 0"
+            src="../img/ITN MOVIES.jfif"
+            alt="itn movies"
+          />
+        </a>
+        <p style="margin-left: 10px; color: white">
+          사업자 정보 - <br />부산시 - <br />대표자 -
+        </p>
+      </div>
+      <script>
+        $(function () {
+          $("#nav1").css("background-color", "rgb(0, 12, 26)");
+          $("#nav1 a").css("color", "white");
+        });
+      </script>
+
+      <style>
+        .navbar-nav {
+          display: flex;
+          justify-content: center;
+        }
+        .navbar-nav .nav-link {
+          color: white !important;
+          margin-right: 40px;
+          position: relative;
+          top: -20px;
+        }
+        .company-info {
+          display: flex;
+          justify-content: left;
+          padding: 20px;
+        }
+        .company-info p {
+          margin: 0;
+          padding: 0 10px;
+        }
+      </style>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

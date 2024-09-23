@@ -1,5 +1,9 @@
 01. 접속 정보
 IP : 192.168.1.82
+PORT : 1521
 ID : ITN2024
 PASSWORD : HH24!
+
+ORACLE SQL DEVELOPER로 접속 시 추가 사항
+서비스이름 : xepdb1
 

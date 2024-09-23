@@ -14,7 +14,9 @@
   <body>
     <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
       <ol class="breadcrumb">
+        <!-- 홈페이지 링크 : Home -->
         <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <!-- 마이페이지 링크 -->
         <li
           class="breadcrumb-item active"
           aria-current="page"
@@ -32,6 +34,7 @@
       <div class="row" style="width: 80%">
         <div class="col-2 mx-auto">
           <div class="list-group" id="list-tab" role="tablist">
+            <!-- 나의 영화관 : 마이페이지 링크 -->
             <a
               class="list-group-item list-group-item-action active"
               style="
@@ -41,6 +44,11 @@
                 height: 60px;
                 font-size: 25px;
               "
+              id="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#list-mypagehome"
+              role="tab"
+              aria-controls="list-mypagehome"
               >나의 영화관</a
             >
             <a
@@ -81,20 +89,58 @@
             >
           </div>
         </div>
-        <div class="col-6 mx-auto">
-          <div style="font-size: 50px">인사말 & 닉네임</div>
+        <div class="col-8 mx-auto">
           <div
-            class="tab-content border"
+            class="tab-content"
             id="nav-tabContent"
-            style="border: 1px solid gray; border-radius: 5px; margin-top: 10px"
+            style="border: 1px solid white; border-radius: 5px; margin-top: 10px"
           >
             <div
               class="tab-pane fade show active"
+              style="font-size: 50px"
+              id="list-mypagehome"
+              role="tabpanel"
+              aria-labelledby="list-mypagehome-list"
+            >
+              인사말 & 닉네임
+            </div>
+            <div
+              class="tab-pane fade"
               id="list-reservation"
               role="tabpanel"
               aria-labelledby="list-reservation-list"
             >
-              내용1
+              <p style="font-size: 30px">예매/구매 내역</p>
+              <table class="table">
+                <thead>
+                  <tr class="table-primary">
+                    <th scope="col">예매일</th>
+                    <th scope="col">영화</th>
+                    <th scope="col">영화관</th>
+                    <th scope="col">관람좌석</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">2024-01</th>
+                    <td>대도시의 사랑법</td>
+                    <td>동래</td>
+                    <td>I-1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2024-02</th>
+                    <td>베테랑</td>
+                    <td>동래</td>
+                    <td>I-1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2024-03</th>
+                    <td>조커</td>
+                    <td>동래</td>
+                    <td>I-1</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div
               class="tab-pane fade"
@@ -102,7 +148,82 @@
               role="tabpanel"
               aria-labelledby="list-ticket-list"
             >
-              내용2
+              <p style="font-size: 30px">영화 관람권</p>
+              <table class="table">
+                <thead>
+                  <tr class="table-primary">
+                    <th scope="col">관람권명</th>
+                    <th scope="col">유효기간</th>
+                    <th scope="col">사용상태</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td colspan="3">조회된 관람권이 없습니다.</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      <p>이용안내</p>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          등록된 관람권은 홈페이지/모바일 예매 시 사용하실 수
+                          있으며, 스크래치가 개봉된 지류(종이)관람권은
+                          현장사용이 불가합니다.
+                        </li>
+                        <li>
+                          관람권으로 예매 후 취소한 경우, 사용하신 관람권은
+                          유효기간 내 재사용할 수 있습니다.
+                        </li>
+                        <li>
+                          유효기간이 지난 관람권은 사용이 불가합니다. (관람일
+                          기준)
+                        </li>
+                        <li>
+                          관람권은 금액권이 아니므로 관람하시는 영화의 티켓 가격
+                          대비 차액은 환급되지 않습니다.
+                        </li>
+                        <li>
+                          (조조/청소년 등 할인가격 영화 관람 시 차액 환불 불가)
+                        </li>
+                        <li>
+                          관람권 종류에 따라 규정된 사용정책이 다르니, 사용전
+                          관람권정보를 확인바랍니다.
+                        </li>
+                        <li>
+                          관람권 사용 시, 관람권별로 규정된 멤버십 포인트가
+                          적립됩니다.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div
               class="tab-pane fade"
@@ -110,7 +231,48 @@
               role="tabpanel"
               aria-labelledby="list-qna-list"
             >
-              내용3
+              <p style="font-size: 30px">문의 내역</p>
+              <table class="table">
+                <thead>
+                  <tr class="table-primary">
+                    <th scope="col">번호</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">답변상태</th>
+                    <th scope="col">등록일</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        환불관련 문의
+                      </button>
+                    </td>
+                    <td>미답변</td>
+                    <td>2024-01</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4">
+                      <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample"
+                      >
+                        <div class="accordion-body">환불 안됩니다.</div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div
               class="tab-pane fade"
@@ -118,7 +280,17 @@
               role="tabpanel"
               aria-labelledby="list-information-list"
             >
-              내용4
+              <p style="font-size: 30px">회원정보</p>
+              <div class="form-floating">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                  style="width: 300px"
+                />
+                <label for="floatingPassword">비밀번호를 입력해 주세요.</label>
+              </div>
             </div>
           </div>
         </div>

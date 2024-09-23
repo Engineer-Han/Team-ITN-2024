@@ -1,0 +1,129 @@
+/* 결제 금액 안내 */
+#Payment_amount{
+    width: 400px; 
+    height: 650px; 
+    margin-left: 1300px; 
+    margin-top: -700px;
+    border-radius: 25px; 
+    background-color: rgba(59, 59, 59, 0.959);
+    position: sticky;
+    top: 5%;
+    z-index: 1000; /* 다른 요소 위에 표시 */
+}
+/* 결제 금액 안내 서브 박스 */
+#amount_subbox1{
+
+    width: 300px; 
+    height: 125px; 
+    margin-left: 50px; 
+    margin-top: 50px; 
+    background-color: rgb(46, 46, 46); 
+    border-radius: 15px;
+    border: none !important
+}
+/* 결제 금액 */
+#amunt_text{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+/* 성인 */
+#amunt_subtex{
+    margin-left: 30px;
+    padding-top: 25px;
+    font-size: 15px;
+    color: rgb(190, 190, 190);
+}
+
+/* 금액 */
+#amunt_subtex2{
+    margin-left: 30px;
+    padding-top: 0px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+/*  마이너스 박스 */
+#minbor_box{
+
+    width: 50px; 
+    height: 50px; 
+    margin-left: 180px; 
+    margin-top: -20px; 
+    position: relative; 
+    z-index: 10;
+    background-color: rgb(43, 64, 253); 
+    border-radius: 100%;
+    /* border-style: double; */
+    border-color: rgb(0, 0, 0) !important
+    
+}
+/* 마이너스 */
+#minus_border{
+    margin-left: 9px;
+    margin-top: 23px;
+    border-width: 2px; 
+    opacity: 1;
+    border-color: rgb(255, 255, 255);
+    width: 30px; 
+
+}
+/* 할인 적용  2  */
+#amount_subbox2{
+
+    width: 300px; 
+    height: 70px; 
+    margin-left: 50px; 
+    margin-top: -20px; 
+    background-color: rgb(46, 46, 46); 
+    border-radius: 15px;
+    border: none !important
+}
+/* 할인 적용 폰트 */
+#amount_subtex3{
+    margin-left: 30px;
+    padding-top: 22px;
+    font-size: 18px;
+    color: white;
+}
+/* 최종 결제 금액 */
+#amount_last{
+    margin-left: 25px;
+    padding-top: 175px;
+}
+/* 최종 결제 금액 폰트 */
+#am_last_fn{
+    color: white;
+    font-size: 18px;
+}
+/* 최종 결제 금액 원 폰트 */
+#last_fn{
+    padding: 5px;
+    font-size: 25px;
+    color: rgb(0, 225, 255);
+}
+/* 결제 수단 : 신용 / 체크카드 박스 */
+#amount_last2{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+/* 결제 수단 텍스트 */
+#am_last_fn2{
+    color: white;
+    font-size: 15px;
+}
+
+/* 결제 안내 구분선 */
+#amunt_border{
+    margin-left: 27px;
+    border-width: 2px; 
+    width: 250px; 
+    margin-top: 15px;
+    border-color: rgb(168, 167, 167);
+}
+/* 결제 안내 구분선 2 */
+#amunt_border2{
+    margin-left: 27px;
+    border-width: 2px; 
+    width: 340px; 
+    margin-top: 15px;
+    border-color: rgb(168, 167, 167);
+}

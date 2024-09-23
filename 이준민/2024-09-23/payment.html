@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="./CSS/button.css">
+        <link rel="stylesheet" href="./CSS/paymet.css">
+        <link rel="stylesheet" href="./CSS/payment.css">
+        <link rel="stylesheet" href="./CSS/main.css">
+        <link rel="stylesheet" href="./header.html">
+ 
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!-- 영화 포스터 및 좌석등 예매 현황 -->
+    <div class="position-absolute top-50 start-0" id="payment">
+        <h1 style="font-size: 25px;">결제하기</h1>
+        <!-- 구분줄 -->
+        <hr class="border-black" id="border">
+        <h2 style="font-size: 25px;"> 예매정보 </h2>
+        <div class="card mb-3" style="width: 630px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./IMG/lookback.webp" class="img-fluid rounded-start" alt="Look_Back" width="400">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h1 class="card-title" style="font-size: 25px;">룩백</h1>
+                        <h3 class="card-text" style="font-size: 20px;">2024.09.20(금) 15:00 ~ 17:04 (2시간)</h3>
+                        <h4 class="card-text" style="font-size: 20px;">프라이빗 룸 1관 4D / D열 : 8석 </h4>
+                        <h5 class="card-text" style="font-size: 20px;">ITN 극장 (부산 장산 NC백화점)</h5>
+                        <p class="card-text" >성인</p>
+                        <p class="card-text"><small class="text-muted">환불 시 상영 1시간전 상품만 환불 가능합니다</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 구분줄 -->
+        <hr class="border-black" id="border">
+    </div>
+
+    <!-- 할인 적용 -->
+    <div id="discount">
+        <h2 class="text-start" style="font-size: 25px;">할인 적용</h2>
+
+        <button type="button" class="btn btn-Secondary" id="main_bt" data-bs-toggle="button">쿠폰/관람권/포인트</button>
+
+        <!-- 쿠폰, 관람권, 포인트 버튼 -->
+        <div class="card-header" style="margin-top: 35px; margin-left: 30px; width: 720px;">
+                <button type="button" id="couponButton" class="btn btn-outline-dark">쿠폰</button>
+                <button type="button" id="ITNButton" class="btn btn-outline-dark">ITN 관람권</button>
+                <button type="button" id="pointButton" class="btn btn-outline-dark">멤버십 포인트</button>
+        </div>
+    
+    </div>
+    <hr class="border-black" id="border2">
+    <!-- 쿠폰 입력 팝업창 -->
+    <div class="modal fade" id="couponModal" tabindex="-1" aria-labelledby="couponModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="couponModalLabel">쿠폰 입력</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="couponCode" class="form-label">쿠폰 코드</label>
+                            <input type="text" class="form-control" id="couponCode" placeholder="쿠폰 코드를 입력하세요">
+                        </div>
+                        <button type="submit" class="btn btn-primary">적용하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 관람권 입력 팝업창 -->
+    <div class="modal fade" id="itnModal" tabindex="-1" aria-labelledby="itnModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="itnModalLabel">관람권 번호 입력</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="itnCode" class="form-label">관람권 번호</label>
+                            <input type="text" class="form-control" id="itnCode" placeholder="관람권 번호를 입력하세요">
+                        </div>
+                        <button type="submit" class="btn btn-primary">적용하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 멤버십 포인트 입력 팝업창 -->
+    <div class="modal fade" id="pointModal" tabindex="-1" aria-labelledby="pointModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pointModalLabel">현재 보유중인 멤버십 포인트 : 3000P</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="pointCode" class="form-label">사용할 멤버십 포인트</label>
+                            <input type="text" class="form-control" id="pointCode" placeholder="사용할 멤버십 포인트를 입력해주세요">
+                        </div>
+                        <button type="submit" class="btn btn-primary">적용하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 결제 금액 안내창 -->
+     
+    <div class="border border-start-0" id="Payment_amount">
+
+        <h3 class="text-light" id="amunt_text"> 결제 금액</h3>
+
+        <div class="border" id="amount_subbox1">
+
+            <h4 id="amunt_subtex">
+                성인 1
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                14000
+            </h4>
+
+            <hr class="border-black" id="amunt_border">
+
+            <h3 id="amunt_subtex2">
+                금액
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                14000원
+            </h3>
+        </div>
+        <div class="border" id="minbor_box">
+            <hr class="border-black" id="minus_border">
+        </div>
+        <div class="border" id="amount_subbox2">
+            <h3 id="amount_subtex3">
+                할인적용
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                7000원
+            </h3>
+
+        </div>
+
+        <div id="amount_last">
+            <h3 id="am_last_fn">
+                최종결제금액
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span id="last_fn">7,000</span>원
+            </h3>
+        </div>
+        <hr class="border-black" id="amunt_border2">
+        <div id="amount_last2">
+            <h3 id="am_last_fn2">
+                결제수단
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                신용/체크카드
+            </h3>
+        </div>
+        <a href="http://127.0.0.1:5500/payment.html?" id="back_bt" onclick="goBack()">
+            이전
+        </a>
+        <a href="http://127.0.0.1:5500/payment.html?" id="payment_bt" onclick="payment()">
+            결제
+        </a>
+       
+    </div>
+    <!-- 결제수단 -->
+    <div>
+        <h2 class="text-start" id="card_text" style="margin-top: 50px; margin-left: 250px; font-size: 25px;">결제수단</h2> 
+        <button type="button" id="card_bt" class="btn btn-outline-dark">신용카드</button>
+        <button type="button" id="bank_book_bt" class="btn btn-outline-dark">계좌결제</button>
+    </div>
+
+    <!-- 신용카드 결제 정보 -->
+    <div id="creditCardSection" class="container mt-3">
+        <h4>신용카드 결제 정보</h4>
+        은행명: <select id="bank_name">
+            
+            <option>은행을 선택해주세요.</option>
+            <option>KB 국민은행</option>
+            <option>IBK 기업은행</option>
+            <option>NH 농협은행</option>
+            <option>신한은행</option>
+            <option>우리은행</option>
+            <option>카카오뱅크</option>
+            <option>카카오페이</option>
+        </select> 
+        <p>신용카드 번호: <input type="text" placeholder="카드 번호 입력"></p>
+        <p>유효 기간: <input type="text" placeholder="MM/YY"></p>
+        <p>CVV: <input type="text" placeholder="CVV 입력"></p>
+    </div>
+
+    <!-- 계좌 결제 정보 -->
+    <div id="creditbank_bookSection" class="container mt-3">
+        <h4>계좌 결제 정보</h4>
+        은행명: <select id="bank_name">
+            
+            <option>은행을 선택해주세요.</option>
+            <option>KB 국민은행</option>
+            <option>IBK 기업은행</option>
+            <option>NH 농협은행</option>
+            <option>신한은행</option>
+            <option>우리은행</option>
+            <option>카카오뱅크</option>
+        </select> 
+        <p>계좌번호: <input type="text" placeholder="계좌번호 입력"></p>
+        <p>비밀번호: <input type="password" placeholder="비밀번호 입력"></p>
+        <p class="notandum">계좌 결제는 본인명의의 계좌를 등록 후 비밀번호 입력으로 이용할 수 있는 현금결제 서비스 입니다.</p>
+        <p class="notandum">은행 점검시간의 경우 결제서비스 이용이 불가합니다.</p>
+    </div>
+
+    <script src="./JS/head_foot.js"></script>
+    <script src="./JS/cupon_bt.js"></script>
+    <script src="./JS/ITN_bt.js"></script>
+    <script src="./JS/point_bt.js"></script>
+    <script src="./JS/pay_met.js"></script>
+    <script src="./JS/test.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+        <div id="footer" style="margin-top: 100px;"></div>
+
+</body>
+
+</html>

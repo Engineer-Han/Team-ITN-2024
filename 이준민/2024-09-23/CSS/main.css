@@ -1,0 +1,52 @@
+@media (max-width: 600px) {
+    .my-element {
+      width: 100%; /* 요소가 작은 화면에서도 깨지지 않도록 조정 */
+      font-size: 14px; /* 텍스트 크기 조정 */
+    }
+  }
+
+body{
+    width: 100%;
+    height: 100%;
+}
+/* 링크 밑줄 제거 */
+a{
+    text-decoration: none;
+}
+
+/* 예매정보 */
+#payment{
+    margin-top: -300px; 
+    margin-left: 250px;
+}
+
+/* 이벤트 */
+#event{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+/* 구분줄 */
+#border{
+    border-width: 2px; 
+    opacity: 1; 
+    width: 750px; 
+    margin-top: 20px;
+}
+/* 구분줄2 */
+#border2{
+    border-width: 2px; 
+    opacity: 1; 
+    width: 750px; 
+    margin-top: 30px;
+    margin-left: 250px;
+
+}
+
+/* 할인 적용 텍스트*/
+#discount{
+    margin-top: 475px; 
+    margin-left: 250px; 
+    width: 670px;
+}

@@ -73,9 +73,12 @@
 .movie-reserve-area {
     width: 300px; /* 원하는 너비 설정 */
     height: 450px; /* 원하는 높이 설정 */
-    margin-right: 20px;
+    
     margin-left: 70px;
     border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);
+    
     border-radius: 5px;
 }
 
@@ -137,9 +140,12 @@
     margin-top: 35px;
 } */
 
+
 /* 극장 선택 영역 */
 .theater-choice {
     border-style: solid;
+    border-width: 2px;
+    border-color: rgb(202, 202, 202);
     border-radius: 5px;
     width: 350px;
     height: 450px;
@@ -167,11 +173,13 @@
 
 
 .theater-container {
-    margin-left: 20px; /* 좌우 여백 추가 */
+    flex: 1;
+    margin-left: 30px; /* 좌우 여백 추가 */
 }
 
 .theater-container2 {
-    margin-right: 20px;
+    flex: 1;
+    margin-right: 30px;
 }
 
 .theater-menu {
@@ -187,6 +195,8 @@
     height: 300px;
     margin-left: 0; /* 마진 제거로 리스트가 붙도록 설정 */
     border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);
     border-radius: 5px;
 }
 
@@ -204,10 +214,12 @@
 
 /* 시간 선택 영역 */
 .time-choice {
+    margin-right: 70px;
     width: 700px;
     height: 450px;
-    margin-left: 20px;
     border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);
     border-radius: 5px;
 }
 
@@ -220,7 +232,9 @@
     margin-left: 8px;
     align-items: center;
     justify-content: center;
-    border-style: solid;   
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);   
 }
 
 .time-button2{
@@ -258,18 +272,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* 시간 선택 리스트 */
 .time-select {
     margin-left: 20px;
@@ -278,5 +280,7 @@
     overflow-y: scroll;
     height: 350px;
     border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);
     margin-top: 10px;
 }

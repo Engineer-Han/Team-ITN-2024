@@ -6,13 +6,15 @@
 .clickme{
     margin-top: 20px;
     font-size: 20px;
-    border-bottom: solid 2px;
+    border-bottom: solid 1px;
     color: black;
 }
 
+
 /* 빠른예매-TITLE */
 .TITLE-11{
-    margin-top: 25px;
+    margin-top: 100px;
+    margin-left: 70px;
     
 }
 
@@ -20,10 +22,11 @@
 .reserve{
 width: 900px;
 height: 500px;
-border-style: dotted 10px;
 border-style: solid;
-margin-top: 100px;
-margin-left: 60px;
+border-width: 2px;
+border-color: rgb(196, 196, 196);
+border-radius: 5px;
+margin-left: 70px;
 border-radius: 7px;
 }
 /* 관람인원 선택AREA */
@@ -32,7 +35,10 @@ border-radius: 7px;
     justify-content: space-between; /* 왼쪽과 오른쪽을 띄워서 배치 */
     align-items: center; /* 세로축에서 중앙 정렬 */
     width: 100%;
-    border-style: dotted;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);
+    border-radius: 5px;
 }
 
 button.reset {
@@ -133,8 +139,11 @@ button.reset {
 .reserve-area {
     display: flex; /* 가로로 배치 */
     align-items: flex-start; /* 상단 정렬 */
-    border-style: dotted;
-    height: 390px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);
+    border-radius: 5px;
+    height: 395px;
     overflow-y: scroll;
     border-radius: 7px;
     position: relative; /* 자식 요소 위치 조정 */
@@ -218,19 +227,21 @@ button.reset {
 
 /* <!-- 영화정보 --> */
 .reserve-info {
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    margin-top: 100px;
     margin-left: 20px;
     width: 350px; /* 가로 크기 */
     height: 500px;
     border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);
+    border-radius: 5px;
 }
 
 .movie-title {
     margin-top: 2px;
     text-align: center;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-decoration: solid;
     font-weight: bold;
     font-size: 18px;
@@ -257,10 +268,11 @@ button.reset {
     vertical-align: top; /* 수직 정렬 */
     margin-top: 0; /* 위쪽 마진 제거 */
     text-align: center;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     font-size: 16px; /* 비율에 맞춰 폰트 크기 조정 */
-    background-color: rgb(65, 65, 65); ;
+    background-color: rgb(255, 255, 255); ;
     border-radius: 5px;
+    font-weight: bolder;
 }
 
 /* 좌석 정보 및 결제금액 영역의 높이 조정 */
@@ -280,7 +292,7 @@ button.reset {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: darkgrey;
+    background-color: rgb(255, 255, 255);
 }
 
 .select-title {
@@ -324,7 +336,7 @@ button.reset {
     border-style: solid;
     border-radius: 5px;
     padding: 5px; /* 기존 padding 유지 */
-    background-color: lightgrey; /* 배경색 추가 */
+    background-color: rgb(255, 255, 255); /* 배경색 추가 */
 }
 
 .CASH-text {

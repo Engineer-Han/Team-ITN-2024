@@ -4,3 +4,6 @@ PORT : 1521
 ID : ITN2024
 PASSWORD : HH24!
 
+ORACLE SQL DEVELOPER로 접속 시 추가 사항
+서비스이름 : xepdb1
+

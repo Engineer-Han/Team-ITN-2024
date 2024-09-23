@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    
+
+  </head>
+
+
+  
+  <body>
+    <div class="container">
+      <br /><br /><br /><br /><br />
+
+      <div class="col-12 text-center">
+        <p class="fw-bold text-decoration-underline">박스오피스</p>
+      </div>
+
+      <div class="col-12 text-end">
+        <button type="button" class="btn btn-info">더 많은 영화 보기+</button>
+      </div>
+      <br />
+
+      <div class="container text-center bg-custom">
+        <div class="row d-flex align-items-stretch">
+
+          <div class="col">
+            <div class="card" style="height: 100%">
+              <img src="./img/베테랑.jpg" class="card-img-top" alt="베테랑" />
+              <div class="card-body">
+                <h5 class="card-title">베테랑</h5>
+                <p class="card-text"></p>
+                <div class="d-flex align-items-center">
+                  <a href="#" class="btn heart-img" id="like-btn">
+                    <img src="./img/heart-2398769_1280.png" alt="">
+                  </a>
+                  <span id="like-count" class="ms-2">0</span>
+                  <a href="#" class="btn btn-primary ms-2">예매</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card" style="height: 100%">
+              <img src="./img/룩백.jpg" class="card-img-top" alt="룩백" />
+              <div class="card-body">
+                <h5 class="card-title">룩백</h5>
+                <p class="card-text"></p>
+                <div class="d-flex align-items-center">
+                  <a href="#" class="btn heart-img" id="like-btn">
+                    <img src="./img/heart-2398769_1280.png" alt="">
+                  </a>
+                  <span id="like-count" class="ms-2">0</span>
+                  <a href="#" class="btn btn-primary ms-2">예매</a>
+                </div>                
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="height: 100%">
+              <img
+                src="./img/새벽의 모든_image.webp"
+                class="card-img-top"
+                alt="새벽의 모든"
+              />
+              <div class="card-body">
+                <h5 class="card-title">새벽의 모든</h5>
+                <p class="card-text"></p>
+                <div class="d-flex align-items-center">
+                  <a href="#" class="btn heart-img" id="like-btn">
+                    <img src="./img/heart-2398769_1280.png" alt="">
+                  </a>
+                  <span id="like-count" class="ms-2">0</span>
+                  <a href="#" class="btn btn-primary ms-2">예매</a>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height: 100%">
+              <img
+                src="./img/joker_poly_image.webp"
+                class="card-img-top"
+                alt="조커"
+              />
+              <div class="card-body">
+                <h5 class="card-title">조커</h5>
+                <p class="card-text"></p>
+                <div class="d-flex align-items-center">
+                  <a href="#" class="btn heart-img" id="like-btn">
+                    <img src="./img/heart-2398769_1280.png" alt="">
+                  </a>
+                  <span id="like-count" class="ms-2">0</span>
+                  <a href="#" class="btn btn-primary ms-2">예매</a>
+                </div>                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="container text-center nav-container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-auto">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="영화를 입력해주세요"
+                aria-label="영화를 입력해주세요"
+                aria-describedby="button-addon2"
+                style="border-radius: 5px 0 0 5px; border: 1px solid #007bff"
+              />
+              <button
+                class="btn btn-info btn-sm"
+                type="button"
+                id="button-addon2"
+                style="border-radius: 0 5px 5px 0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="col nav-link">
+            <a href="timetable.html" class="nav-link">상영시간표</a>
+          </div>
+          <div class="col nav-link">
+            <a href="boxoffice.html" class="nav-link">박스오피스</a>
+          </div>
+          <div class="col nav-link">
+            <a href="fast_booking.html" class="nav-link">빠른예매</a>
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <!-- 캐러셀 -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/베테랑2photo.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>베테랑2 I, THE EXECUTIONER</h5>
+              <p>
+                가족들도 못 챙기고 밤낮없이 범죄들과 싸우는 베테랑 형사
+                '서도철'(황정민)과 강력범죄수사대 형사들.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/lookback.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>룩백</h5>
+              <p>“만화를 그려서 다행이라고 생각해”</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/Joker_ Folie a Deux.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>조커: 폴리 아 되 Joker: Folie à Deux</h5>
+              <p>
+                아캄에 수감된 조커와 할리 퀸의 운명적인 만남과 조커의 재판과정
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br /><br /><br />
+
+      <!-- 작은 캐러셀 (7개 슬라이드) -->
+      <div
+        id="smallCarousel"
+        class="carousel slide small-carousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <a href="">
+                <img
+                  src="./img/dolbyCinema.png"
+                  class="d-block mx-2"
+                  alt="Slide 1"
+              /></a>
+              <a href="">
+                <img
+                  src="./img/dolbyAtmos.jpeg"
+                  class="d-block mx-2"
+                  alt="Slide 2"
+              /></a>
+              <a href="">
+                <img
+                  src="./img/comfort.jpeg"
+                  class="d-block mx-2"
+                  alt="Slide 3"
+              /></a>
+              <a href="">
+                <img src="./img/kid.jpeg" class="d-block mx-2" alt="Slide 4"
+              /></a>
+              <a href="">
+              <img
+                src="./img/THE BOUTIQUE.jpeg"
+                class="d-block mx-2"
+                alt="Slide 5"
+              /></a>
+              <a href="">
+              <img
+                src="./img/THE BOUTIQUE PRIVATE.jpeg"
+                class="d-block mx-2"
+                alt="Slide 6"
+              /></a>
+              <a href="">
+              <img src="./img/mx4d.jpeg" class="d-block mx-2" alt="Slide 7" />
+            </div></a>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <img
+                src="./img/dolbyCinema.png"
+                class="d-block mx-2"
+                alt="Slide 1"
+              />
+              <img
+                src="./img/dolbyAtmos.jpeg"
+                class="d-block mx-2"
+                alt="Slide 2"
+              />
+              <img
+                src="./img/comfort.jpeg"
+                class="d-block mx-2"
+                alt="Slide 3"
+              />
+              <img src="./img/kid.jpeg" class="d-block mx-2" alt="Slide 4" />
+              <img
+                src="./img/THE BOUTIQUE.jpeg"
+                class="d-block mx-2"
+                alt="Slide 5"
+              />
+              <img
+                src="./img/THE BOUTIQUE PRIVATE.jpeg"
+                class="d-block mx-2"
+                alt="Slide 6"
+              />
+              <img src="./img/mx4d.jpeg" class="d-block mx-2" alt="Slide 7" />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#smallCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#smallCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col bottom-img">
+          <a href="http://">
+            <img src="./img/headphones-1935971_1280.png" alt="고객센터" />
+            <p>고객센터</p>
+          </a>
+        </div>
+        <div class="col bottom-img">
+          <a href="http://">
+            <img
+              src="./img/question-and-answer-7247900_1280.png"
+              alt="자주 묻는 질문"
+            />
+            <p>자주 묻는 질문</p>
+          </a>
+        </div>
+        <div class="col bottom-img">
+          <a href="http://">
+            <img src="./img/comments-6534501_1280.png" alt="1:1 문의" />
+            <p>1:1 문의</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous" src="./js/main.js"
+    >    
+  </script>
+  </body>
+</html>

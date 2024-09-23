@@ -1,0 +1,160 @@
+.nav-link {
+  font-size: 1.2rem;
+  color: white !important;
+  padding: 5px 4px;
+  background-color: #0c73e0;
+  border-radius: 10px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}
+
+/* 맨위 카드 4장 호버 */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.heart-img img {
+  width: 24px; /* 원하는 크기로 조정 */
+  height: auto; /* 비율 유지 */
+  max-width: 100%; /* 부모 요소의 너비에 맞춤 */
+  display: flex; /* 이미지 버튼을 flex로 */
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column; /* 세로로 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+}
+
+.d-flex {
+  width: 100%; /* 가로 전체 차지 */
+  justify-content: center; /* 중앙 정렬 */
+  gap: 10px; /* 버튼 간격 */
+}
+
+/* 영화 입력 칸 스타일 추가 */
+.input-group {
+  width: 100%;
+  /* 입력 그룹의 폭을 100%로 설정 */
+}
+
+.input-group .form-control {
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  width: calc(100% - 50px);
+  /* 버튼의 폭을 고려하여 입력 칸의 폭 조정 */
+}
+
+.input-group .btn {
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 40px;
+  /* 버튼의 폭을 지정 */
+}
+
+.input-group .btn:hover {
+  background-color: #007bff;
+}
+
+/* 나머지 스타일 유지 */
+.nav-container {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-custom {
+  background-color: #f0f8ff;
+  padding: 20px;
+}
+
+.carousel-caption {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+/* 캐러셀 높이 설정 */
+.carousel-item {
+  height: 800px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 작은 캐러셀 이미지 높이 조정 */
+#smallCarousel {
+  padding: 10px 0;
+  /* 위아래 여백을 줄입니다 */
+}
+
+#smallCarousel .carousel-item img {
+  height: auto;
+  /* 이미지의 비율을 유지하면서 자동으로 크기 조정 */
+  max-height: 80px;
+  /* 최대 높이를 80px로 설정하여 이미지가 너무 커지지 않게 조정 */
+  object-fit: contain;
+  /* 이미지를 잘라내지 않고 비율을 유지합니다 */
+}
+
+/* 캐러셀 자체의 최대 높이를 설정 */
+.small-carousel .carousel-inner {
+  max-height: 120px;
+  /* 캐러셀 전체 높이를 제한하여 공간을 줄임 */
+}
+
+.bottom-img {
+  text-align: center;
+  padding: 10px;
+  /* 패딩을 줄여 상자의 크기를 축소 */
+  font-size: 15px;
+  /* 글자 크기를 더 작게 조정 */
+  border-radius: 8px;
+  /* 모서리를 조금 덜 둥글게 */
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #007bff;
+  /* 버튼 배경 색상 유지 */
+  margin-bottom: 15px;
+  /* 아래 여백을 줌 */
+  margin: 10px;
+  /* 박스 사이에 여유 공간 추가 */
+}
+
+.bottom-img img {
+  width: 50px;
+  /* 이미지 크기를 줄임 */
+  height: auto;
+  margin-bottom: 8px;
+  /* 이미지와 텍스트 간격도 축소 */
+}
+
+.bottom-img:hover {
+  transform: translateY(-3px);
+  /* 호버 효과를 약간 줄임 */
+  background-color: #0056b3;
+  /* 호버 시 배경 색상 유지 */
+}
+
+.bottom-img a {
+  color: white;
+  text-decoration: none;
+}
+
+.bottom-img a:hover {
+  text-decoration: underline;
+  /* 호버 시 밑줄 추가 */
+}

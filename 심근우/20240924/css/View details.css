@@ -1,0 +1,99 @@
+hr{
+    color: white;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+.movie-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(134, 40, 40);
+}
+.movie-description {
+    color: white;
+}
+.review-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.review-card:hover {
+    transform: scale(1.02);
+}
+.embed-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.movie-header {
+    
+    background-color: black;
+    height: 100%;
+    background-image: url('/p/img/베테랑\ 배경이미지.jpg'); /* 배경 이미지 URL */
+    /* background-size: cover; */
+    background-position: center;
+    padding: 20px;
+    color: white;
+}
+
+.category-menu {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.category-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s;
+}
+.category-button:hover {
+    background-color: #0056b3;}
+
+.first-divided{
+  background-image: url(/p/img/큰배경2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.b-divided{
+   
+
+}
+.d-divided{
+    /* background-image: url(/p/img/큰배경01.jpg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+
+}
+.s-divided{
+    background-image: url(/p/img/ticket-2974645_1280.jpg);
+    
+    background-repeat: repeat;
+   
+}
+.color2{
+    color: white;
+}
+.color{
+    color: gray;
+}
+

@@ -1,0 +1,43 @@
+/* 예매정보 */
+main #payment {
+    margin-top: -30vh; /* 뷰포트 높이의 20% */
+    margin-left: 15%; /* 부모 요소의 너비의 15% */
+ 
+}
+
+/* 구분줄 */
+main #border {
+    
+    border-color: rgb(0, 0, 0);
+    border-width: 0.5vh; /* 높이에 비례하여 3px을 0.3vh로 변경 */
+    width: calc(100% - 1.9vw); /* 너비를 뷰포트 너비의 비율로 변경 */
+    max-width: 100%; /* 최대 너비를 100%로 설정하여 동적 크기 유지 */
+    margin-top: 2vh; /* 상단 여백을 뷰포트 높이에 비례하여 20px을 2vh로 변경 */
+    
+}
+
+
+/* 할인 적용 박스 */
+main #discount {
+ 
+    margin-top: 55vh;
+    margin-left: 15vw;
+    width: calc(100% - 40px); 
+    max-width: 800px;
+
+    
+}
+/* 구분줄 2 */
+main #border2 {
+    
+    border-color: rgb(0, 0, 0);
+    border-width: 0.5vh; /* 높이에 비례하여 3px을 0.3vh로 변경 */
+    width: calc(100% - 1vw); /* 너비를 뷰포트 너비의 비율로 변경 */
+    max-width: 100%; /* 최대 너비를 100%로 설정하여 동적 크기 유지 */
+    margin-top: 2vh; /* 상단 여백을 뷰포트 높이에 비례하여 20px을 2vh로 변경 */
+}
+
+
+
+
+

@@ -40,7 +40,7 @@ body {
     
     background-color: black;
     height: 100%;
-    background-image: url('/p/img/베테랑\ 배경이미지.jpg'); /* 배경 이미지 URL */
+    background-image: url('/p/img/background.jpg'); /* 배경 이미지 URL */
     /* background-size: cover; */
     background-position: center;
     padding: 20px;
@@ -68,7 +68,7 @@ body {
     background-color: #0056b3;}
 
 .first-divided{
-  background-image: url(/p/img/큰배경2.jpg);
+  background-image: url(/p/img/big\ background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,0 +1,23 @@
+main .carousel-control-prev-icon,
+main .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* 원하는 색상으로 변경 */
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+main .carousel-indicators [data-bs-target] {
+  background-color: rgba(0, 0, 0, 0.5); /* 기본 버튼 색상 */
+}
+
+main .carousel-indicators .active {
+  background-color: black; /* 활성화된 버튼 색상 */
+}
+
+main .carousel-caption h5 {
+  color: white; /* 제목 색상 */
+}
+
+main .carousel-caption p {
+  color: white; /* 본문 색상 */
+}

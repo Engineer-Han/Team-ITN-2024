@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITN MOVIE</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/02_b_kwon_qna.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <!-- jQuery CDN 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CDN 추가 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- header -->
+      <!-- Header Section -->
+      <div style="background-color: rgb(0, 12, 26)">
+        <nav id="nav1" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Centered Navigation Links -->
+            <div
+              class="collapse navbar-collapse"
+              id="navbarSupportedContent"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 100%;
+              "
+            >
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"
+                style="
+                  list-style: none;
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: center;
+                  padding: 0;
+                  margin: 0;
+                  font-size: 25px;
+                "
+              >
+                <li class="nav-item"><a class="nav-link" href="#">영화</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">예매</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">극장</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><img
+                      style="
+                        width: 200px;
+                        height: 140px;
+                        margin: 0px;
+                        padding: 0px;
+                      "
+                      src="../img/ITN MOVIES.jfif"
+                      alt="itn movies"
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">이벤트</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">스토어</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">혜택</a></li>
+              </ul>
+            </div>
+            <!-- Login and Support Links -->
+            <ul
+              class="nav-login"
+              style="padding-top: 5px; font-size: 15px; position: absolute"
+            >
+              <a href="#" class="nav-item">고객센터</a>
+              <a href="#" class="nav-item">로그인</a>
+              <a href="#" class="nav-item">회원가입</a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- main -->
+
+      <!-- 사이드바 -->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="width: 15rem">
+              <img src="../img/anno.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <a
+                  href="#"
+                  class="btn btn-light d-flex justify-content-center align-items-center"
+                  >공지사항</a
+                >
+              </div>
+            </div>
+            <div class="card" style="width: 15rem">
+              <img src="../img/qna.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <a
+                  href="#"
+                  class="btn btn-light d-flex justify-content-center align-items-center"
+                  >자주묻는 질문</a
+                >
+              </div>
+            </div>
+            <div class="card" style="width: 15rem">
+              <img src="../img/ques.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <a
+                  href="#"
+                  class="btn btn-light d-flex justify-content-center align-items-center"
+                  >1:1 문의</a
+                >
+              </div>
+            </div>
+            <div class="card" style="width: 15rem">
+              <img src="../img/tel.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5
+                  class="card-title d-flex justify-content-center align-items-center"
+                >
+                  문의 1234-5678
+                </h5>
+                <p
+                  class="card-text d-flex justify-content-center align-items-center"
+                >
+                  AM:09:00 ~ PM 18:00
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 중앙에 새로운 디자인 추가 -->
+
+          <div class="col-md-9">
+            <!-- 예시: 3개의 카드로 구성된 그리드 -->
+            <div class="row">
+              <img
+                src="../img/qnaboard.png"
+                class="img-fluid"
+                alt="..."
+                style="border-radius: 20px"
+              />
+              <div class="col-md-6">
+                <br />
+                <h1>&nbsp;자주묻는 질문</h1>
+                <br />
+                <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">1.[영화예매]</a>
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarNavDarkDropdown"
+                      aria-controls="navbarNavDarkDropdown"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                      class="collapse navbar-collapse"
+                      id="navbarNavDarkDropdown"
+                    >
+                      <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                          <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Q. 온라인 예매는 최대 몇매까지 가능한가요?
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-white">
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >A. 온라인 예매 시(ITN MOVIE 홈페이지 및 APP)
+                                1회 결제 시 최대 8매까지 예매 가능합니다.</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="col-md-6"></div>
+            </div>
+
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- footer -->
+      <div style="background-color: rgb(0, 12, 26)">
+        <nav id="nav1" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarFooter"
+              aria-controls="navbarFooter"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- White Divider -->
+            <div style="border-bottom: solid white 10px"></div>
+
+            <!-- Footer Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarFooter">
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"
+                style="font-size: 20px; padding-top: 30px"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="#">회사소개</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">윤리경영</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">이용약관</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">개인정보처리방침</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Company Info Section -->
+        <div
+          class="company-info d-flex align-items-center justify-content-center"
+          style="background-color: rgb(0, 12, 26)"
+        >
+          <a class="nav-link" href="#">
+            <img
+              src="../img/ITN MOVIES.jfif"
+              alt="itn movies"
+              style="width: 120px; height: 94px"
+            />
+          </a>
+          <p style="margin-left: 10px; color: white">
+            사업자 정보 - <br />
+            부산시 - <br />
+            대표자 -
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS 추가 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

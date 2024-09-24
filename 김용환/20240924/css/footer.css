@@ -1,0 +1,24 @@
+/* 네비게이션 항목 가로 정렬 및 링크 스타일 */
+footer .navbar-nav {
+    display: flex;
+    justify-content: center;
+  }
+  footer  .navbar-nav .nav-link {
+    color: white !important;
+    margin-right: 40px;
+    position: relative;
+    top: -20px;
+  }
+  
+  footer  /* 회사 정보 섹션 스타일 */
+  .company-info {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    background-color: rgb(0, 12, 26);
+  }
+  footer  .company-info p {
+    margin: 0;
+    padding: 0 10px;
+  }
+  

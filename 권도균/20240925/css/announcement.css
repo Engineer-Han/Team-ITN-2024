@@ -1,0 +1,138 @@
+main .sidebar {
+  background-color: rgb(0, 12, 26); /* 사이드바 배경색 */
+  color: white; /* 텍스트 색상 */
+  border-right: 1px solid #34495e; /* 테두리 */
+  padding: 20px; /* 패딩 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  width: 100%; /* 사이드바 너비 조정 */
+  height: auto;
+}
+
+main .nav-link {
+  color: #ecf0f1; /* 링크 색상 */
+  padding: 10px 15px; /* 링크 패딩 */
+  border-radius: 5px; /* 링크 모서리 둥글게 */
+  transition: background-color 0.3s; /* 호버 시 부드러운 효과 */
+}
+
+main .nav-link:hover {
+  background-color: #2980b9; /* 호버 시 배경색 */
+  color: white; /* 호버 시 텍스트 색상 */
+}
+
+main .body {
+  background-color: rgb(248, 248, 248);
+  font-family: Arial, sans-serif;
+}
+
+main .sidebar {
+  background-color: rgb(0, 12, 26); /* 사이드바 배경색 */
+  color: white; /* 텍스트 색상 */
+  border-right: 1px solid #34495e; /* 테두리 */
+  padding: 20px; /* 패딩 */
+  border-radius: 50px; /* 모서리 둥글게 */
+  width: 100%;
+  height: auto;
+}
+
+main .sidebar h2 {
+  text-align: center; /* 고객센터 텍스트 중앙 정렬 */
+}
+
+main .sidebar .nav {
+  text-align: center; /* 전체 링크들을 중앙 정렬 */
+}
+
+main .sidebar .nav-link {
+  display: inline-block; /* 링크들을 중앙 정렬 상태로 유지하기 위해 inline-block으로 변경 */
+}
+
+/* ====================================================================여기까지 사이드바 */
+/* 드롭다운 */
+
+/* 드롭다운 질문 버튼 스타일 */
+main .accordion-button {
+  background-color: rgb(0, 12, 26); /* 사이드바와 동일한 배경색 */
+  color: #ecf0f1; /* 사이드바와 일관된 텍스트 색상 */
+  border: 1px solid #34495e; /* 테두리 색상 사이드바와 유사 */
+  font-weight: bold; /* 텍스트 굵게 */
+  padding: 15px; /* 내부 여백 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* 배경색 전환과 크기 전환 효과 */
+  margin-bottom: 10px; /* 버튼 간의 간격 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 입체감을 위한 그림자 */
+}
+
+/* 드롭다운 버튼 호버 효과 */
+main .accordion-button:hover,
+main .accordion-button:focus {
+  background-color: #34495e; /* 호버 시 배경색 변경 */
+  color: #ecf0f1; /* 호버 시 텍스트 색상 유지 */
+  transform: scale(1.05); /* 버튼 크기 약간 확대 */
+}
+
+/* 드롭다운 아이콘 색상 반전 */
+main .accordion-button:after {
+  filter: invert(1); /* 드롭다운 아이콘 색상 반전 */
+}
+
+/* 드롭다운 본문 스타일 */
+main .accordion-body {
+  background-color: rgb(
+    0,
+    20,
+    45
+  ); /* 본문 배경색: 사이드바와 비슷한 어두운 파란색 */
+  color: #ecf0f1; /* 텍스트 색상 흰색으로 사이드바와 일관 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  padding: 20px; /* 본문 내용의 여백 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 살짝 입체감 주기 위한 그림자 */
+}
+
+/* 드롭다운 본문 텍스트 크기 */
+.accordion-body p {
+  font-size: 16px; /* 본문 텍스트 크기 조정 */
+  line-height: 1.6; /* 읽기 쉽게 줄 간격 조정 */
+}
+
+/* 드롭다운 버튼이 열렸을 때 아이콘 색상 */
+main .accordion-button:not(.collapsed):after {
+  filter: invert(1); /* 드롭다운 아이콘 색상 반전 */
+}
+
+/* Q&A 검색창 스타일 */
+#searchInput {
+  background-color: rgb(
+    0,
+    20,
+    45
+  ); /* 검색창 배경색: 사이드바와 유사한 어두운 파란색 */
+  color: #ecf0f1; /* 텍스트 색상 흰색 */
+  border: 1px solid #34495e; /* 테두리 색상 사이드바와 일관 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  padding: 10px; /* 내부 여백 */
+}
+
+/* 검색창 포커스 시 */
+#searchInput:focus {
+  border-color: #ecf0f1; /* 포커스 시 테두리 색상 변경 */
+  outline: none; /* 기본 아웃라인 제거 */
+}
+
+/* 페이지네이션 스타일 */
+main .pagination .page-link {
+  background-color: rgb(0, 12, 26); /* 사이드바와 같은 배경색 */
+  color: #ecf0f1; /* 텍스트 색상 흰색 */
+  border: 1px solid #34495e; /* 테두리 색상 통일 */
+  border-radius: 5px; /* 모서리 둥글게 */
+}
+
+main .pagination .page-link:hover {
+  background-color: #34495e; /* 호버 시 배경색 변경 */
+  color: #ecf0f1; /* 텍스트 색상 유지 */
+}
+
+#searchInput::placeholder {
+  color: white; /* 원하는 색상으로 변경 (현재는 밝은 파란색) */
+  opacity: 1; /* 투명도를 변경하지 않도록 설정 */
+}

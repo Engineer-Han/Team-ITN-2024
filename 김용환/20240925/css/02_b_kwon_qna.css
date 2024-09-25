@@ -1,0 +1,11 @@
+main .navbar-dark .navbar-brand {
+  color: black !important;
+}
+
+main .navbar-dark .nav-link {
+  color: black !important;
+}
+
+main .card {
+  margin-bottom: 20px;
+}

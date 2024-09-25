@@ -1,0 +1,91 @@
+/* 쿠폰/관람권/포인트 버튼 */
+main #main_bt {
+    width: 35vw; /* 화면 너비의 35% */
+    max-width: 550px; /* 최대 너비를 650px로 설정 */
+    height: 8vh; /* 화면 높이의 8% */
+    border-radius: 4vh; /* 동적으로 둥근 모서리 설정 */
+    font-size: 2rem; /* 화면 비율에 맞는 글자 크기 */
+    margin-top: 3vh; /* 상단 여백 */
+    margin-bottom: 3vh; /* 하단 여백 */
+    margin-left: 7vw; /* 좌측 여백 */
+    
+}
+
+/* 쿠폰 버튼 */
+main #couponButton {
+    width: 10vw; 
+    max-width: 180px; /* 최대 너비를 200px로 설정 */
+    height: 6vh;
+    border-radius: 0.5vw; 
+    margin-right: -3.5vw; /* 우측 여백 */
+    margin-left: 5vw; /* 좌측 여백을 vw로 조정 */
+}
+
+/* 관람권 버튼 */
+main #ITNButton {
+    width: 10vw; 
+    max-width: 180px; /* 최대 너비를 200px로 설정 */
+    height: 6vh;
+    border-radius: 0.5vw; 
+    margin-right: -3.5vw; /* 우측 여백 */
+    margin-left: 5vw; /* 좌측 여백을 vw로 조정 */
+}
+
+/* 포인트 버튼 */
+main #pointButton {
+    width: 10vw; 
+    max-width: 180px; /* 최대 너비를 200px로 설정 */
+    height: 6vh; 
+    border-radius: 0.5vw; 
+    margin-right: -3.5vw; /* 우측 여백 */
+    margin-left: 5vw; /* 좌측 여백을 vw로 조정 */
+}
+
+/* 카드 버튼 */
+main #card_bt {
+    margin-left: 10vw;
+    margin-top: 4vh;
+    width: 25vw; 
+    height: 6vh; 
+    text-align: center;
+}
+
+/* 계좌결제 버튼 */
+main #bank_book_bt {
+    margin-left: 10vw;
+    margin-top: 2vh;
+    width: 25vw; 
+    height: 6vh; 
+    text-align: center;
+}
+
+/* 이전 버튼 */
+main #back_bt {
+    width: 20vw;
+    height: 6vh;
+    margin-top: 3vh;
+    background-color: rgb(112, 112, 112);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-decoration: none;
+}
+
+/* 결제 버튼 */
+main #payment_bt {
+    width: 20vw;
+    height: 6vh;
+    margin-top: -4vh;
+    margin-left: 15vw;
+    background-color: rgb(0, 225, 255);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-decoration: none;
+}

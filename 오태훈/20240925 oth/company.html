@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jQuery CDN 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CDN 추가 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap JS 추가 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div style="background-color: white;">
+
+      <!-- Main Content -->
+      <div class="d-flex justify-content-center" style="height: 100vh; padding-top: 50px;">
+        <div class="row" style="width: 80%;">
+          <!-- Sidebar Navigation -->
+          <div class="col-2">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" style="background-color: rgb(207, 226, 255); color: black; border: 3px solid rgb(207, 226, 255); height: 60px; font-size: 25px;" data-bs-toggle="list" href="#list-mypagehome" role="tab">ITN MOVIES</a>
+              <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-company1" role="tab">회사소개</a>
+              <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-company2" role="tab">윤리경영</a>
+              <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-company3" role="tab">이용약관</a>
+              <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-company4" role="tab">개인정보처리방침</a>
+            </div>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="col-8">
+            <div class="tab-content" id="nav-tabContent" style="border: 1px solid gray; border-radius: 5px; margin-top: 10px; padding: 20px;">
+              <!-- Home Tab -->
+              <div class="tab-pane fade  show active" id="list-mypagehome" role="tabpanel" style="font-size: 50px; color: black;">환영합니다 회원님!</div>
+
+              <!-- 회사소개 -->
+              <div class="tab-pane fade" id="list-company1" role="tabpanel">
+                
+                <p style="font-size: 30px; color: black;">회사소개</p>
+                <div class="container" style="background-color: white;">
+                <p style="background-color: white; width: 98%;"><br>[ITN MOVIES] <br>
+                <p class="container" style="border-bottom:solid 1px black; width: 98%;"></p>
+
+                    최고의 영화 경험을 선사하는 [ITN MOVIES] 에 오신 것을 환영합니다!
+                    
+                    [ITN MOVIES]은 고객 한 분 한 분께 잊지 못할 영화 관람의 즐거움을 선사하기 위해 노력하는 프리미엄 영화관입니다. 최신 상영 기술과 고품질 사운드를 자랑하는 상영관, 편안한 좌석, 그리고 다양한 관람 옵션을 통해 영화 감상 이상의 특별한 경험을 제공합니다. <br>
+                    <br>
+                    저희 영화관은 다양한 장르의 최신 블록버스터부터 독립 영화, 예술 영화까지 폭넓은 작품들을 상영하며, 모든 연령대와 취향을 만족시키는 풍부한 콘텐츠를 보유하고 있습니다. 또한, 정기적으로 진행되는 영화제, 시사회, 관객과의 대화 프로그램 등 특별한 이벤트를 통해 영화 팬들과의 소통의 장을 마련하고 있습니다. <br>
+                    <br>
+                    뿐만 아니라, 친환경 경영을 실천하며 지속 가능한 문화 공간을 만들기 위해 노력하고 있습니다. 에너지 효율적인 설비와 친환경 소재를 사용하여 더욱 건강하고 쾌적한 환경을 조성하고 있습니다. <br>
+                    <br>
+                    [ITN MOVIES]에서 영화 이상의 감동을 느껴보세요. 최상의 서비스와 함께 언제나 여러분을 기다리고 있겠습니다.<br><br></p>
+                    
+              </div>
+            </div>
+              <!-- 윤리경영 -->
+              <div class="tab-pane fade" id="list-company2" role="tabpanel">
+                <p style="font-size: 30px; color: black;">윤리경영</p>
+                <div class="container" style="background-color: white; display: flex; justify-content: center; align-items: center;">
+                  <img style="width: 600px; height: 600px;" src="./company2.png" alt="">
+                </div>
+              </div>
+              
+
+            <!-- 이용약관 -->
+              <div class="tab-pane fade" id="list-company3" role="tabpanel">
+                <p style="font-size: 30px; color: black">이용약관</p>
+                <div class="container" style="background-color: white;">
+                    <p style="background-color: white;"><br>[ITN MOVIES] 이용약관<br></p>
+                    <p class="container" style="border-bottom:solid 1px black; width: 98%;"></p>
+                    <p>
+                        <ol>
+                            <li>본 영화관의 모든 고객은 영화관 내 규정을 준수해야 하며, 이를 위반할 경우 퇴장 조치될 수 있습니다.</li>
+                            <li>상영 중 휴대전화 사용, 촬영, 녹음 등 영화 상영을 방해하는 행위는 금지됩니다.</li>
+                            <li>상영 시작 후 입장은 제한될 수 있으며, 영화표는 상영 전까지 취소 및 변경 가능합니다.</li>
+                            <li>영화관 내 반려동물 동반은 금지되며, 안내견 등 법적 허용 범위 내의 동물만 허용됩니다.</li>
+                            <li>외부 음식물 반입은 금지되며, 영화관 내 지정된 매장에서 구입한 음식만 섭취 가능합니다.</li>
+                            <li>고객의 부주의로 발생한 사고나 분실물에 대해 영화관은 책임지지 않습니다.</li>
+                            <li>티켓은 지정된 본인만 사용할 수 있으며, 타인에게 양도할 수 없습니다.</li>
+                            <li>만 12세 미만의 어린이는 보호자 동반 시에만 입장할 수 있습니다.</li>
+                            <li>상영관 내 비상 상황 발생 시, 직원의 지시에 따라 신속하게 대피해야 합니다.</li>
+                            <li>기타 자세한 사항은 영화관 홈페이지 또는 고객 센터를 통해 확인해 주시기 바랍니다.</li>
+                        </ol>
+                        <br>
+                    </p>
+                </div>
+                
+              </div>
+
+              <!-- 개인정보처리방침 -->
+              <div class="tab-pane fade" id="list-company4" role="tabpanel">
+                <p style="font-size: 30px; color: black;">개인정보처리방침</p>
+                <div>
+                    <div style="background-color: white;">
+
+                    
+                <p class="container" style="background-color: white; width: 98%;"><br><br>개인정보보호법에 따라 이용자의 개인정보 보호 및
+                    권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 개인정보 처리방침을 두고 있습니다.
+                    회사는 개인정보 처리방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.</p>
+                <p class="container" style="border-bottom:solid 1px black; width: 98%;"></p>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th>
+                                <ul>
+                                    <li>제 1조, 개인정보의 처리목적</li>
+                                    <li>제 2조. 개인정보의 처리 및 보유 기간</li>
+                                    <li>제 3조. 개인정보의 제 3자 제공</li>
+                                    <li>제 4조. 개인정보 처리의 위탁</li>
+                                    <li>제 5조.정보주체의 권리, 의무 및 행사 방법</li>
+                                    <li>제 6조. 개인정보의 파기 절차 및 방법</li>
+                                    <li>제 7조. 개인정보 및 행태정보 자동 수집 장치의<br> 설치 · 운영 및 거부에 관한 사항</li>
+                                </ul>
+                            </th>
+                            <th>
+                                <ul>
+                                    <li>제 8조. 개인정보의 안전성 확보조치</li>
+                                    <li>제 9조. 개인정보 국외이전</li>
+                                    <li>제 10조. 개인정보 보호책임자</li>
+                                    <li>제 11조. 개인정보 열람청구</li>
+                                    <li>제 12조. 권익침해 구제방법</li>
+                                    <li>제 13조. 고정형 영상정보처리기기 설치</li>
+                                    <li>제 14조. 개인위치정보의 처리</li>
+                                    <li>제 15조. 개인정보 처리방침 변경</li>
+                                </ul>
+                            </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                      <br><br>
+                    </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

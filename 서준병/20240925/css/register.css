@@ -1,0 +1,28 @@
+main {
+  background-image: url("/img/abandoned-places.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+main h2 {
+  color: #007bff;
+}
+
+main .container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  width: 100%;
+}
+
+main .btn-custom {
+  height: calc(2.5rem + 2px);
+  width: 100%;
+}
+
+main .input-group {
+  width: 100%;
+}

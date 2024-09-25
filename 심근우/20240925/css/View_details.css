@@ -1,0 +1,99 @@
+main hr{
+    color: white;
+}
+
+main body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+main .movie-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(134, 40, 40);
+}
+main .movie-description {
+    color: white;
+}
+main .review-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+main .review-card:hover {
+    transform: scale(1.02);
+}
+main .embed-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+main .embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+main .movie-header {
+    
+    background-color: black;
+    height: 100%;
+    background-image: url('/p/img/background.jpg'); /* 배경 이미지 URL */
+    /* background-size: cover; */
+    background-position: center;
+    padding: 20px;
+    color: white;
+}
+
+main .category-menu {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+main .category-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s;
+}
+main .category-button:hover {
+    background-color: #0056b3;}
+
+    main .first-divided{
+  background-image: url(../img/big_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.b-divided{
+   
+
+}
+.d-divided{
+    /* background-image: url(/p/img/큰배경01.jpg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+
+}
+main .s-divided{
+    background-image: url(/p/img/ticket-2974645_1280.jpg);
+    
+    background-repeat: repeat;
+   
+}
+main .color2{
+    color: white;
+}
+main .color{
+    color: white;
+}
+

@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.til-util{
+    margin-top: 5%;
+    margin-left: 14%;
+    
+}
+
+/* gpt-solution */
+.date-selection {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-width: 1px;
+    border-bottom: solid;
+    border-top: solid;
+    border-color: rgb(196, 196, 196); 
+    background-color: rgb(230, 230, 230); 
+}
+
+
+.time-button {
+    background-color: rgb(211, 210, 210);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.time-button:hover {
+    background-color: #e0e0e0;
+}
+
+.date-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.date-item {
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #2300ec;
+    border-bottom: 3px solid transparent; /* 기본 언더라인을 투명으로 설정 */
+    transition: border-color 0.3s;
+}
+
+.date-item.active {
+    border-bottom: 3px solid #007bff; /* 선택된 항목에 언더라인 추가 */
+    color: #0056b3; /* 선택된 항목 색상 변경 */
+}
+
+.date-item:hover {
+    border-bottom: 3px solid rgba(0, 123, 255, 0.5); /* 호버시 언더라인 색상 변경 */
+}
+
+
+
+
+
+
+
+/* 영화, 극장, 시간 전체영역 */
+.reservation-container {
+    display: flex;
+    margin-left: 10%;
+    border: 10px solid transparent;
+    gap: 10px;
+    height: 600px;
+    
+}
+
+/* 날짜 선택 앞, 뒤 버튼 */
+#time-button {
+    background-color: rgb(253, 253, 253);
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/* 영화 영역 전체 */
+.movie-reserve-area {
+    width: 300px; /* 원하는 너비 설정 */
+    height: 450px; /* 원하는 높이 설정 */
+    
+    margin-left: 70px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);
+    
+    border-radius: 5px;
+}
+
+
+
+/* 영화: 전체/큐레이션 버튼 */
+.movie-all {
+    margin-bottom: 0; /* 영화 리스트와의 간격 없애기 */
+    border-style: solid 1px;
+}
+
+/* 버튼 스타일 */
+.movie-select-button {
+    display: flex; /* 버튼들 가로로 배치 */
+    width: 250px; /* 영화 리스트의 너비에 맞춤 */
+    margin-left: 25px;
+    margin-top: 20px;
+    height: 20px;    
+}
+
+.custom-button {
+    flex: 1;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0; /* 마진을 없애서 버튼이 붙도록 설정 */
+    
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+#movie-text2{
+    display: flex; /* 플렉스 박스로 변경 */
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    height: 100%;
+    align-items: center;
+    justify-content: center; /* 가로 중앙 정렬 */
+    
+}
+
+/* 영화 리스트 */
+.movie-list {
+    width: 250px;
+    height: 285px;
+    margin-left: 25px;
+    overflow-y: scroll;
+    margin-top: 0;
+}
+
+/* 영화 선택시 이벤트
+.movie-box {
+    text-align: center;
+    margin-top: 35px;
+} */
+
+
+/* 극장 선택 영역 */
+.theater-choice {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(202, 202, 202);
+    border-radius: 5px;
+    width: 350px;
+    height: 450px;
+}
+
+/* 극장 메뉴/리스트 합체 */
+.theaterflex {
+    display: flex;
+    justify-content: space-between; /* 리스트들이 균등하게 배치되도록 설정 */
+    margin: 10px 0; /* 상하 여백 */
+}
+
+/* 극장 버튼 */
+#theater-bt , #theater-bt2{
+    margin-top: 5px;
+    width: 140px;
+    height: 20px;
+    display: flex; /* 플렉스 박스로 변경 */
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+
+
+.theater-container {
+    flex: 1;
+    margin-left: 30px; /* 좌우 여백 추가 */
+}
+
+.theater-container2 {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.theater-menu {
+    width: 100%; /* 버튼의 너비를 리스트에 맞춤 */
+}
+
+
+/* 극장 리스트 */
+.theater-list, .theater-list2 {
+    overflow-y: scroll;
+    width: 140px;
+    font-size: small;
+    height: 300px;
+    margin-left: 0; /* 마진 제거로 리스트가 붙도록 설정 */
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);
+    border-radius: 5px;
+}
+
+/* 극장 선택시 상호작용 */
+.theater-box {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+/* 시간 선택 영역 */
+.time-choice {
+    margin-right: 70px;
+    width: 700px;
+    height: 450px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);
+    border-radius: 5px;
+}
+
+/* 날짜 선택 버튼 */
+.Day-choice {
+    font-weight: bolder;
+    font-size: 12px;
+    display: flex;
+    width: 680px;
+    margin-left: 8px;
+    align-items: center;
+    justify-content: center;
+    
+    border-width: 2px;
+    border-bottom: solid;
+    border-top: solid; 
+    border-color: rgb(196, 196, 196); 
+    background-color: rgb(230, 230, 230); 
+}
+
+.time-button2{
+    background-color: rgb(211, 210, 210);
+    border: none;
+    border-radius: 5px;
+    padding: 2px 2px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.time-button2:hover {
+    background-color: #e0e0e0;
+}
+
+.date-item2{    
+    
+    font-size: 12px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #2300ec;
+    border-bottom: 3px solid transparent; /* 기본 언더라인을 투명으로 설정 */
+    transition: border-color 0.3s;
+}
+
+.date-item2.active {
+    
+    border-bottom: 3px solid #007bff; /* 선택된 항목에 언더라인 추가 */
+    color: #0056b3; /* 선택된 항목 색상 변경 */
+}
+
+.date-item2:hover {
+    border-bottom: 3px solid rgba(0, 123, 255, 0.5); /* 호버시 언더라인 색상 변경 */
+}
+
+
+
+/* 시간 선택 리스트 */
+.time-select {
+    margin-left: 20px;
+    text-align: center;
+    width: 660px;
+    overflow-y: scroll;
+    height: 350px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(196, 196, 196);
+    margin-top: 10px;
+}
+
+.list-text,.list-text2{
+    text-align: left;
+}

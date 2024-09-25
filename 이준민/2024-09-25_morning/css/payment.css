@@ -1,0 +1,246 @@
+/* 결제 금액 안내 */
+main #Payment_amount {
+    width: 25vw; /* 뷰포트 너비의 25% */
+    max-width: 400px; /* 최대 너비 400px */
+    min-width: 250px; /* 최소 너비 250px */
+    
+    height: 80vh; /* 뷰포트 높이의 80% */
+    max-height: 680px; /* 최대 높이 600px */
+    min-height: 10px; /* 최소 높이 400px */
+    
+    margin-left: 70vw; /* 뷰포트 너비의 70% */
+    margin-top: -80vh; /* 뷰포트 높이의 -85% */
+    
+    border-radius: 2vw; /* 너비의 2% */
+    background-color: rgba(59, 59, 59, 0.959);
+    
+    position: sticky;
+    top: 5%;
+    z-index: 1000;
+    border: none;
+}
+
+/* 결제 금액 상단 박스 1 */
+.amount-container {
+    display: flex; /* Flexbox 사용 */
+    justify-content: space-between; /* 양 끝에 배치 */
+    align-items: center; /* 세로 가운데 정렬 */
+    margin: 1vh 0; /* 상하 여백 */
+    padding: 0 1.5vw; /* 좌우 패딩 추가 (필요에 따라 조정) */
+    padding-top: 0.5vw;
+    height: -1vh;
+    
+
+}
+
+/* 14000 */
+.amount-value {
+    margin-left: auto; /* 오른쪽으로 밀기 */
+    padding-left: 1vw; /* 왼쪽 여백 */
+    color: white; /* 글자색 변경 (필요시) */
+}
+
+/* 결제 금액 상단 박스 2 */
+.amount-container2 {
+    display: flex; /* Flexbox 사용 */
+    justify-content: space-between; /* 양 끝에 배치 */
+    align-items: center; /* 세로 가운데 정렬 */
+    margin: 1vh 0; /* 상하 여백 */
+    padding: 0 1vw; /* 좌우 패딩 추가 (필요에 따라 조정) */
+    padding-top: -4vw;
+    height: -1vh;
+
+}
+/* 14000원 */
+.amount-value2 {
+    margin-left: auto; /* 오른쪽으로 밀기 */
+    padding-left: 1vw; /* 왼쪽 여백 */
+    color: white; /* 글자색 변경 (필요시) */
+}
+
+/* 할인적용 박스 */
+.amount-container3 {
+    display: flex; /* Flexbox 사용 */
+    justify-content: space-between; /* 양 끝에 배치 */
+    align-items: center; /* 세로 가운데 정렬 */
+    margin: 1vh 0; /* 상하 여백 */
+    padding: 0 1vw; /* 좌우 패딩 추가 (필요에 따라 조정) */
+    padding-top: -4vw;
+    height: -1vh;
+}
+/* 7000원 */
+.amount-value3 {
+    margin-left: auto; /* 오른쪽으로 밀기 */
+    padding-left: 1vw; /* 왼쪽 여백 */
+    color: white; /* 글자색 변경 (필요시) */
+}
+
+/* 최종결제 금액 박스 */
+.amount-container4 {
+    display: flex; /* Flexbox 사용 */
+    justify-content: space-between; /* 양 끝에 배치 */
+    align-items: center; /* 세로 가운데 정렬 */
+    margin: 1vh 0; /* 상하 여백 */
+    padding: 0 1vw; /* 좌우 패딩 추가 (필요에 따라 조정) */
+    padding-top: -4vw;
+    height: -1vh;
+
+}
+/* 7000원 */
+.amount-value4 {
+    margin-left: auto; /* 오른쪽으로 밀기 */
+    padding-left: 1vw; /* 왼쪽 여백 */
+    color: white; /* 글자색 변경 (필요시) */
+}
+
+/* 결제수단 / 신용/체크카드 */
+.amount-container5 {
+    display: flex; /* Flexbox 사용 */
+    justify-content: space-between; /* 양 끝에 배치 */
+    align-items: center; /* 세로 가운데 정렬 */
+    margin: 1vh 0; /* 상하 여백 */
+    padding: 0 1vw; /* 좌우 패딩 추가 (필요에 따라 조정) */
+    padding-top: -4vw;
+    height: -1vh;
+
+}
+/* 7000원 */
+.amount-value5 {
+    margin-left: auto; /* 오른쪽으로 밀기 */
+    padding-left: 1vw; /* 왼쪽 여백 */
+    color: white; /* 글자색 변경 (필요시) */
+}
+
+
+
+/* 결제 금액 안내 서브 박스 */
+main #amount_subbox1 {
+    width: 18vw; /* 뷰포트 너비의 18% */
+    max-width: 350px; /* 최대 너비 설정 */
+   
+    height: 11vh; /* 뷰포트 높이의 10% */
+    margin-left: 1.5vw; /* 너비의 3% */
+    margin-top: 3vh; /* 높이의 5% */
+    background-color: rgb(46, 46, 46);
+    border-radius: 1vw;
+    border: none !important;
+}
+
+
+
+/* 결제 금액 */
+main #amunt_text {
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+    
+}
+
+
+/* 성인 */
+main #amunt_subtex {
+    margin-left: 0.8vw;
+    padding-top: 0.5vh;
+    font-size: 1em;
+    color: rgb(190, 190, 190);
+}
+
+/* 금액 */
+main #amunt_subtex2 {
+    margin-left: 1.5vw;
+    padding-top: -1.5vh;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+}
+
+/* 마이너스 박스 */
+main #minbor_box {
+    width: 4vw;
+    max-width: 55px; /* 최대 너비 설정 */
+    height: 3vw;
+    margin-left: 9.5vw;
+    margin-top: -2vh;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(43, 64, 253);
+    border-radius: 50%;
+    border-color: rgb(0, 0, 0) !important;
+}
+
+/* 마이너스 */
+main #minus_border {
+    margin-left: 0.4vw;
+    margin-top: 2.8vh;
+    border-width: 0.3em;
+    border-color: rgb(255, 255, 255);
+    opacity: 1;
+    width: 2vw;
+}
+
+/* 결제 금액 안내 서브박스 2 */
+main #amount_subbox2 {
+    width: 18vw;
+    max-width: 350px; /* 최대 너비 설정 */
+    height: 5vh;
+    margin-left: 1.5vw;
+    margin-top: -3.5vh;
+    background-color: rgb(46, 46, 46);
+    border-radius: 1vw;
+    border: none !important;
+}
+
+/* 할인 적용 폰트 */
+main #amount_subtex3 {
+    margin-left: 0.5vw;
+    padding-top: 1.5vh;
+    font-size: 1.1em;
+    color: white;
+}
+
+/* 최종 결제 금액 */
+main #amount_last {
+    margin-left: 1vw;
+    padding-top: 20vh;
+}
+
+/* 최종 결제 금액 폰트 */
+main #am_last_fn {
+    color: white;
+    font-size: 1.1em;
+}
+
+/* 최종 결제 금액 원 폰트 */
+main #last_fn {
+    padding: 0.5vh;
+    margin-top: -1vh;
+    font-size: 1.8em;
+    color: rgb(0, 225, 255);
+}
+
+/* 결제 수단 : 신용 / 체크카드 박스 */
+main #amount_last2 {
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+}
+
+/* 결제 수단 텍스트 */
+main #am_last_fn2 {
+    color: white;
+    font-size: 1em;
+}
+
+/* 결제 안내 구분선 */
+main #amunt_border {
+    margin-left: 1.5vw;
+    border-width: 0.1em;
+    width: 15vw;
+    margin-top: 1vh;
+    border-color: rgb(168, 167, 167);
+}
+
+/* 결제 안내 구분선 2 */
+main #amunt_border2 {
+    border-width: 0.1em;
+    width: 22vw;
+    margin-top: 1vh;
+    border-color: rgb(168, 167, 167);
+}

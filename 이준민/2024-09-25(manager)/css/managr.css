@@ -1,0 +1,27 @@
+a{
+    text-decoration: none;
+}
+
+.nav-link.active {
+    background-color: yellow !important;
+    color: black !important;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+canvas {
+    max-width: 100%;
+}
+  
+.admin-welcome-box {
+    margin-left: -0.7vw; /* 좌측 여백을 없앰 */
+    padding: 10px; /* 박스 안쪽 여백 */
+    display: flex;
+    align-items: center; /* 텍스트를 중앙에 수직 정렬 */
+    background-color: #ffffff; /* 박스 색상을 추가할 수 있음 */
+    width: 101.5%;
+}

@@ -1,0 +1,31 @@
+/* 네비게이션 배경 및 글자색 */
+header #nav1 {
+    background-color: rgb(0, 12, 26);
+  }
+  header #nav1 a {
+    color: white !important;
+  }
+  
+  /* 네비게이션 항목 가로 정렬 및 링크 스타일 */
+  header  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* 가운데 정렬 */
+  }
+  header .navbar-nav .nav-link {
+    margin-right: 40px; /* 항목 간 간격 */
+  }
+  
+  /* 로그인 및 회원가입 상단 오른쪽 정렬 */
+  header .nav-login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 15px;
+  }
+  header .nav-login a {
+    color: white !important;
+    margin-left: 10px;
+  }
+  

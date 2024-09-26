@@ -1,0 +1,73 @@
+/* 사이드바 */
+
+main .sidebar {
+  background-color: rgb(0, 12, 26); /* 사이드바 배경색 */
+  color: white; /* 텍스트 색상 */
+  border-right: 1px solid #34495e; /* 테두리 */
+  padding: 20px; /* 패딩 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  width: 100%; /* 사이드바 너비 조정 */
+  height: auto;
+}
+
+main .nav-link {
+  color: #ecf0f1; /* 링크 색상 */
+  padding: 10px 15px; /* 링크 패딩 */
+  border-radius: px; /* 링크 모서리 둥글게 */
+  transition: background-color 0.3s; /* 호버 시 부드러운 효과 */
+}
+
+main .nav-link:hover {
+  background-color: #2980b9; /* 호버 시 배경색 */
+  color: white; /* 호버 시 텍스트 색상 */
+}
+
+main .body {
+  background-color: rgb(248, 248, 248);
+  font-family: Arial, sans-serif;
+}
+
+main .sidebar {
+  background-color: rgb(0, 12, 26); /* 사이드바 배경색 */
+  color: white; /* 텍스트 색상 */
+  border-right: 1px solid #34495e; /* 테두리 */
+  padding: 20px; /* 패딩 */
+  border-radius: 50px; /* 모서리 둥글게 */
+  width: 100%;
+  height: auto;
+}
+
+main .sidebar h2 {
+  text-align: center; /* 고객센터 텍스트 중앙 정렬 */
+}
+
+main .sidebar .nav {
+  text-align: center; /* 전체 링크들을 중앙 정렬 */
+}
+
+main .sidebar .nav-link {
+  display: inline-block; /* 링크들을 중앙 정렬 상태로 유지하기 위해 inline-block으로 변경 */
+}
+
+main .collapse p {
+  margin: 0; /* 마진 조정 */
+}
+
+main .pagination button {
+  background-color: rgb(0, 12, 26);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main .pagination button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+main .pagination button.active {
+  background-color: #0056b3; /* Active page button color */
+  font-weight: bold;
+}

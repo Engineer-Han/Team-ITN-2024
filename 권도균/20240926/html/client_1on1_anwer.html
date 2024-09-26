@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITN MOVIE - Inquiry Detail</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/client_1on1_answer.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div style="background-color: rgb(0, 12, 26)">
+        <nav id="nav1" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse"
+              id="navbarSupportedContent"
+              style="display: flex; justify-content: center"
+            >
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"
+                style="font-size: 25px"
+              >
+                <li class="nav-item"><a class="nav-link" href="#">영화</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">예매</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">극장</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img
+                      style="width: 200px; height: 140px"
+                      src="../img/ITN MOVIES.jfif"
+                      alt="itn movies"
+                    />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">이벤트</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">스토어</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">혜택</a></li>
+              </ul>
+            </div>
+            <ul class="nav-login" style="font-size: 15px; position: absolute">
+              <a href="#" class="nav-item">고객센터</a>
+              <a href="#" class="nav-item">로그인</a>
+              <a href="#" class="nav-item">회원가입</a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div
+        class="container"
+        style="max-width: 1200px; margin-top: 50px; margin-left: 280px"
+      >
+        <div class="row">
+          <!-- Sidebar -->
+          <div class="col-md-3" style="margin-right: 50px; margin-top: 260px">
+            <nav class="sidebar">
+              <h2 style="color: white">고객센터</h2>
+              <div class="nav flex-column">
+                <a class="nav-link" href="#">자주 묻는 질문</a>
+                <a class="nav-link" href="#">공지사항</a>
+                <a class="nav-link" href="#">1:1문의</a>
+              </div>
+            </nav>
+          </div>
+
+          <!-- Inquiry Detail Section -->
+          <div class="col-md-8" style="margin-bottom: 70px">
+            <div
+              class="inquiry-detail"
+              style="
+                margin-top: 20px;
+                padding: 20px;
+                background-color: #f8f9fa;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <h1>1:1 문의</h1>
+              <p4 class="mb-4">문의 제목</p3>
+              <div>
+                <p><strong>작성자:</strong> 사용자 이름</p>
+                <p><strong>등록일:</strong> 2024.09.24</p>
+                <p><strong>내용:</strong></p>
+                <p>여기에 문의 내용을 작성합니다...</p>
+              </div>
+
+              <h3 class="mt-4">답변 작성하기</h3>
+              <form action="#" method="POST">
+                <div class="mb-3">
+                  <label for="responseContent" class="form-label"
+                    >답변 내용</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="responseContent"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="responseFile" class="form-label">첨부 파일</label>
+                  <input class="form-control" type="file" id="responseFile" />
+                </div>
+                <button type="submit" class="btn btn-primary">답변 등록</button>
+              </form>
+
+              <h3 class="mt-4">이전 답변들</h3>
+              <div class="previous-responses">
+                <div class="response">
+                  <p><strong>관리자 이름:</strong></p>
+                  <p>여기에 관리자 답변 내용...</p>
+                </div>
+                <!-- 추가적인 답변은 여기에 반복 -->
+              </div>
+
+              <nav aria-label="Page navigation" class="mt-4">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#">이전</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">다음</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div style="background-color: rgb(0, 12, 26)">
+        <nav id="nav1" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarFooter"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarFooter">
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"
+                style="font-size: 20px; padding-top: 30px; color: white"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="#">회사소개</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">윤리경영</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">이용약관</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">개인정보처리방침</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div
+          class="company-info d-flex align-items-center justify-content-center"
+          style="background-color: rgb(0, 12, 26)"
+        >
+          <a class="nav-link" href="#">
+            <img
+              src="../img/ITN MOVIES.jfif"
+              alt="itn movies"
+              style="width: 140px; height: 94px"
+            />
+          </a>
+          <p style="margin-left: 10px; color: white">
+            사업자 정보 - <br />부산시 - <br />대표자 -
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

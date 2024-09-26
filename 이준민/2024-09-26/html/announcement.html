@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+        <!-- jQuery CDN 추가 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Bootstrap CDN 추가 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../css/managr.css">
+        <link rel="stylesheet" href="../css/border.css">
+
+        
+</head>
+<body>
+    <main class="container-fluid" style="background-color: rgb(238, 238, 238);">
+            <div class="row">
+                <!-- 메뉴 탭 -->
+                <div class="col-md-2 bg-dark d-flex flex-column" style="min-height: 100vh;">
+                    <div>
+                        <img src="../img/ITN MOVIES.png" class="figure-img img-fluid rounded" alt="영화관 로고">
+                    </div>
+    
+                    <nav class="nav flex-column">
+                        <div>
+                            <a class="nav-link link-light" href="http://127.0.0.1:5500/html/manager_main.html" data-bs-toggle="list" id="menu1"
+                            style="margin-top: 2vh;">
+                                <img src="../img/default_home.png" alt="관리자메인" class="figure-img img-fluid rounded"
+                                    style="width: 15%; margin-right: 0.5vw;">
+                                관리자 메인
+                            </a>
+                        </div>
+                        <div>
+                            <a class="nav-link link-light" href="http://127.0.0.1:5500/html/announcement.html"  id="menu2"
+                                style="margin-top: 2vh;">
+                                <img src="../img/default_announcement.png" alt="공지사항" class="figure-img img-fluid rounded"
+                                    style="width: 15%; margin-right: 0.5vw;">
+                                공지사항
+                            </a>
+                        </div>
+                        <div>
+                            <a class="nav-link link-light" href="member_list.html" data-bs-toggle="list" id="menu3"
+                                style="margin-top: 2vh;">
+                                <img src="../img/default_person.png" alt="회원리스트" class="figure-img img-fluid rounded"
+                                    style="width: 15%; margin-right: 0.5vw;">
+                                회원 리스트
+                            </a>
+                        </div>
+                        <div class="dropdown" style="margin-top: 2vh;">
+                            <div class="nav-link link-light dropdown-toggle" style="cursor: pointer;" id="menu4">
+                                <img src="../img/default_movie.png" alt="영화 관리" class="figure-img img-fluid rounded"
+                                    style="width: 15%; margin-right: 0.5vw;">
+                                영화 관리
+                            </div>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="add_movie.html" id="menu4_1">영화 등록</a>
+                                <a class="dropdown-item" href="movie_list.html" id="menu4_2">영화 목록</a>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <a class="nav-link link-light" href="#" data-bs-toggle="list" id="menu5"
+                                style="margin-top: 2vh;">
+                                <img src="../img/default_inquiry.png" alt="1대1 문의" class="figure-img img-fluid rounded"
+                                    style="width: 15%; margin-right: 0.5vw;">
+                                1대1 문의
+                            </a>
+                        </div>
+                        <div>
+                            <a class="nav-link link-light" href="#" data-bs-toggle="list" id="menu6"
+                                style="margin-top: 2vh;">
+                                <img src="../img/default_comment.png" alt="관람평 관리" class="figure-img img-fluid rounded"
+                                    style="width: 15%; margin-right: 0.5vw;">
+                                관람평 관리
+                            </a>
+                        </div>
+                    </nav>
+    
+                    <div class="mt-auto">
+                        <a href="" style="border-style: none; color: white; margin-bottom: 1.5vh;" onclick="log_out()"> <img
+                                src="../img/logout.png" alt="로그아웃"
+                                style="margin-right: 3.5vh; margin-left: 1.5vh; margin-bottom: 2vh; width: 15%;">로그아웃</a>
+                    </div>
+                </div>
+                <div class="container mt-5">
+                    <h2 class="mb-4">공지사항</h2> 
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">작성자</th>
+                                <th scope="col">작성일</th>
+                                <th scope="col">조회수</th>
+                                <th scope="col" style="width: 1vw;">삭제</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td><a href="#" onclick="post()">게시물 제목 1</a></td>
+                                <td>관리자</td>
+                                <td>2024-09-25</td>
+                                <td>123</td>
+                                <td>
+                                    <div class="form-check d-flex" style="width: 7vw;"> <!-- 너비를 줄이고 패딩을 조정 -->
+                                        <label class="form-check-label ms-2" for="flexCheckChecked">
+                                            삭제하기
+                                        </label>
+                                        <input class="form-check-input ms-auto" type="checkbox" value="" id="flexCheckChecked">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td><a href="#" onclick="post()">게시물 제목 2</a></td>
+                                <td>관리자</td>
+                                <td>2024-09-24</td>
+                                <td>89</td>
+                                <td>
+                                    <div class="form-check d-flex" style="width: 7vw;"> <!-- 너비를 줄이고 패딩을 조정 -->
+                                        <label class="form-check-label ms-2" for="flexCheckChecked">
+                                            삭제하기
+                                        </label>
+                                        <input class="form-check-input ms-auto" type="checkbox" value="" id="flexCheckChecked">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td><a href="#" onclick="post()">게시물 제목 3</a></td>
+                                <td>관리자</td>
+                                <td>2024-09-23</td>
+                                <td>89</td>
+                                <td>
+                                    <div class="form-check d-flex" style="width: 7vw;"> <!-- 너비를 줄이고 패딩을 조정 -->
+                                        <label class="form-check-label ms-2" for="flexCheckChecked">
+                                            삭제하기
+                                        </label>
+                                        <input class="form-check-input ms-auto" type="checkbox" value="" id="flexCheckChecked">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td><a href="#" onclick="post()">게시물 제목 4</a></td>
+                                <td>관리자</td>
+                                <td>2024-09-22</td>
+                                <td>89</td>
+                                <td>
+                                    <div class="form-check d-flex" style="width: 7vw;"> <!-- 너비를 줄이고 패딩을 조정 -->
+                                        <label class="form-check-label ms-2" for="flexCheckChecked">
+                                            삭제하기
+                                        </label>
+                                        <input class="form-check-input ms-auto" type="checkbox" value="" id="flexCheckChecked">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td><a href="#" onclick="post()">게시물 제목 5</a></td>
+                                <td>관리자</td>
+                                <td>2024-09-21</td>
+                                <td>89</td>
+                                <td>
+                                    <div class="form-check d-flex" style="width: 7vw;"> <!-- 너비를 줄이고 패딩을 조정 -->
+                                        <label class="form-check-label ms-2" for="flexCheckChecked">
+                                            삭제하기
+                                        </label>
+                                        <input class="form-check-input ms-auto" type="checkbox" value="" id="flexCheckChecked">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td><a href="#" onclick="post()">게시물 제목 6</a></td>
+                                <td>매니저 </td>
+                                <td>2024-09-20</td>
+                                <td>89</td>
+                                <td>
+                                    <div class="form-check d-flex" style="width: 7vw;"> <!-- 너비를 줄이고 패딩을 조정 -->
+                                        <label class="form-check-label ms-2" for="flexCheckChecked">
+                                            삭제하기
+                                        </label>
+                                        <input class="form-check-input ms-auto" type="checkbox" value="" id="flexCheckChecked">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td><a href="#"onclick="post()">게시물 제목 7</a></td>
+                                <td>매니저</td>
+                                <td>2024-09-19</td>
+                                <td>89</td>
+                                <td>
+                                    <div class="form-check d-flex" style="width: 7vw;"> <!-- 너비를 줄이고 패딩을 조정 -->
+                                        <label class="form-check-label ms-2" for="flexCheckChecked">
+                                            삭제하기
+                                        </label>
+                                        <input class="form-check-input ms-auto" type="checkbox" value="" id="flexCheckChecked">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <!-- 페이지네이션 -->
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" tabindex="-1" onclick="change_page()">이전</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#" onclick="change_page()">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#" onclick="change_page()">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#" onclick="change_page()">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" onclick="change_page()">다음</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-end" style="height: 4vh; margin-bottom: 3vh;">
+                            <button type="button" class="btn btn-danger" onclick="delete_bt()">삭제</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+    </main>
+    <script src="../js/alert.js"></script>
+    <script src="../js/hover.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

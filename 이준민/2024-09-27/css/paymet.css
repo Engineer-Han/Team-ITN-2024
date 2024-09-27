@@ -1,0 +1,36 @@
+/* 결제 수단 텍스트 */
+main #card_text {
+    margin-top: 10vh; /* 뷰포트 높이의 10% */
+    margin-left: 20vw; /* 뷰포트 너비의 20% */
+}
+
+/* 무통장 버튼 */
+main #bank_book_bt {
+    margin-left: 5vw; /* 뷰포트 너비의 5% */
+    margin-top: 3vh; /* 뷰포트 높이의 3% */
+}
+
+/* 은행명 */
+main #bank_name {
+    margin-bottom: 2vh; /* 뷰포트 높이의 2% */
+}
+
+/* 카드 결제 설명 */
+main #creditCardSection {
+    display: none;
+    margin-left: 25vw; /* 뷰포트 너비의 25% */
+    margin-bottom: 3vh; /* 뷰포트 높이의 3% */
+}
+
+/* 무통장 결제 설명 */
+main #creditbank_bookSection {
+    display: none;
+    margin-left: 25vw; /* 뷰포트 너비의 25% */
+    margin-bottom: 3vh; /* 뷰포트 높이의 3% */
+}
+
+/* 주의사항 */
+main .notandum {
+    font-weight: bold;
+    margin-left: -7vw; /* 뷰포트 너비의 -7% */
+}

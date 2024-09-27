@@ -1,0 +1,17 @@
+.table-container {
+    border: 1px solid black !important; /* 전체 테이블 외곽선 */
+    border-radius: 5px; /* 모서리 둥글게 (필요시 추가) */
+    overflow: hidden; /* 내용이 넘칠 경우 숨김 */
+}
+
+table {
+    border-collapse: collapse; /* 테이블 셀 사이의 간격을 없앱니다. */
+    width: 100%; /* 테이블 너비를 100%로 설정 */
+    border: 3px solid black !important; /* 테이블 자체에 외곽선 추가 */
+}
+
+th, td {
+    border: 1.5px solid black !important; /* 셀의 내부 외곽선 */
+    padding: 10px; /* 셀 안의 여백 설정 */
+    text-align: center; /* 텍스트 정렬 */
+}

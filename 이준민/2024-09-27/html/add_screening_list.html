@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상영 목록 추가</title>
+    <!-- jQuery CDN 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CDN 추가 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../css/managr.css">
+</head>
+
+<body>
+    <main class="container-fluid" style="background-color: rgb(238, 238, 238);">
+        <div class="row">
+            <!-- 메뉴 탭 -->
+            <div class="col-md-2 bg-dark d-flex flex-column" style="min-height: 100vh;">
+                <div>
+                    <img src="../img/ITN MOVIES.png" class="figure-img img-fluid rounded" alt="영화관 로고">
+                </div>
+
+                <nav class="nav flex-column">
+                    <div>
+                        <a class="nav-link link-light" href="manager_main.html" data-bs-toggle="list" id="menu1">
+                            <img src="../img/default_home.png" alt="관리자메인" class="figure-img img-fluid rounded"
+                                style="width: 15%; margin-right: 0.5vw;">
+                            관리자 메인
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav-link link-light" href="announcement.html" id="menu2" style="margin-top: 2vh;">
+                            <img src="../img/default_announcement.png" alt="공지사항" class="figure-img img-fluid rounded"
+                                style="width: 15%; margin-right: 0.5vw;">
+                            공지사항
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav-link link-light" href="member_list.html" data-bs-toggle="list" id="menu3"
+                            style="margin-top: 2vh;">
+                            <img src="../img/default_person.png" alt="회원리스트" class="figure-img img-fluid rounded"
+                                style="width: 15%; margin-right: 0.5vw;">
+                            회원 리스트
+                        </a>
+                    </div>
+                    <div class="dropdown" style="margin-top: 2vh;">
+                        <div class="nav-link link-light dropdown-toggle" style="cursor: pointer;" id="menu4">
+                            <img src="../img/default_movie.png" alt="영화 관리" class="figure-img img-fluid rounded"
+                                style="width: 15%; margin-right: 0.5vw;">
+                            영화 관리
+                        </div>
+                        <div class="dropdown-content">
+                            <a class="dropdown-item" href="new_add_movie.html" id="menu4_1">신규 영화 등록</a>
+                            <a class="dropdown-item" href="add_screening_list.html" id="menu4_2">상영 목록 추가</a>
+                            <a class="dropdown-item" href="movie_list.html" id="menu4_3">상영 목록</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="nav-link link-light" href="#" data-bs-toggle="list" id="menu5"
+                            style="margin-top: 2vh;">
+                            <img src="../img/default_inquiry.png" alt="1대1 문의" class="figure-img img-fluid rounded"
+                                style="width: 15%; margin-right: 0.5vw;">
+                            1대1 문의
+                        </a>
+                    </div>
+                </nav>
+                <div class="mt-auto">
+                    <a href="" style="border-style: none; color: white; margin-bottom: 1.5vh;" onclick="log_out()"> <img
+                            src="../img/logout.png" alt="로그아웃"
+                            style="margin-right: 3.5vh; margin-left: 1.5vh; margin-bottom: 2vh; width: 15%;">로그아웃</a>
+                </div>
+            </div>
+            <!-- 중앙 콘텐츠 영역 -->
+            <div class="col-md-10 d-flex align-items-start" style="padding-left: 0; padding-right: 0;">
+                <div style="background-color: white; height: 100%; flex-grow: 1; max-width: 100%;">
+                    <h2 class="text-left mt-4 ms-3">상영 목록 추가</h2>
+                    <form id="movieForm">
+                        <div class="mb-3 ms-3" style="max-width: 30%;">
+                            <label for="moviePoster" class="form-label">포스터 업로드</label>
+                            <input class="form-control" type="file" id="moviePoster" required>
+                        </div>
+                        <div class="mb-3 ms-3" style="max-width: 13vw;">
+                            <label class="form-label">영화 제목</label>
+                            <select class="form-select" id="movieTitleSelect" required style="width: 100%; height: 40px;" onchange="updateMovieDetails()">
+                                <option selected>영화 제목 선택</option>
+                                <option value="베테랑2">베테랑2</option>
+                                <option value="대도시의 사랑법">대도시의 사랑법</option>
+                                <option value="조커: 폴리 아 되">조커: 폴리 아 되</option>
+                                <option value="트랜스포머 one">트랜스포머 one</option>
+                                <option value="룩백">룩백</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 ms-3" style="max-width: 50%;">
+                            <label for="movieSummary" class="form-label">줄거리</label>
+                            <textarea class="form-control" id="movieSummary" placeholder="줄거리를 입력하세요" rows="4" required readonly></textarea>
+                        </div>
+                        
+                        <div class="mb-3 ms-3" style="max-width: 20%;">
+                            <label for="movieCast" class="form-label">출연진</label>
+                            <textarea class="form-control" id="movieCast" rows="4" placeholder="출연진을 입력해주세요" required readonly></textarea>
+                        </div>
+                        
+                        <div class="mb-3 ms-3" style="max-width: 20%;">
+                            <label for="movieDirector" class="form-label">감독</label>
+                            <input type="text" class="form-control" id="movieDirector" placeholder="감독을 입력해주세요" required readonly>
+                        </div>
+                        <h4 class="text-left mt-4 ms-3">상영 시작 시간</h4>
+                        <div class="d-flex ms-3">
+                            <div class="mb-3 me-3" style="max-width: 10%;">
+                                <label for="releaseMonth" class="form-label">월</label>
+                                <input type="number" class="form-control" id="releaseMonth" placeholder="월" required
+                                    min="1" max="12" step="1" style="appearance: none;">
+                            </div>
+                            <div class="mb-3 me-3" style="max-width: 10%;">
+                                <label for="releaseDay" class="form-label">일</label>
+                                <input type="number" class="form-control" id="releaseDay" placeholder="일" required
+                                    min="1" max="31" step="1" style="appearance: none;">
+                            </div>
+                            <div class="mb-3 me-3" style="max-width: 10%;">
+                                <label for="releaseHour" class="form-label">시간</label>
+                                <input type="number" class="form-control" id="releaseHour" placeholder="시간" required
+                                    min="1" max="24" step="1" style="appearance: none;" onchange="adjustMinutes()">
+                            </div>
+                            <div class="mb-3" style="max-width: 10%;">
+                                <label for="releaseMinute" class="form-label">분</label>
+                                <input type="number" class="form-control" id="releaseMinute" placeholder="분" required
+                                    min="0" max="59" step="1" style="appearance: none;">
+                            </div>
+                        </div>
+                    <h4 class="text-left mt-2 ms-3">종영 시간</h4>
+                        <div class="d-flex ms-3">
+                            <div class="mb-3 me-3" style="max-width: 10%;">
+                                <label for="endHour" class="form-label">시간</label>
+                                <input type="number" class="form-control" id="endHour" placeholder="시간" required
+                                    min="0" max="24" step="1" style="appearance: none;">
+                            </div>
+                            <div class="mb-3" style="max-width: 10%;">
+                                <label for="endMinute" class="form-label">분</label>
+                                <input type="number" class="form-control" id="endMinute" placeholder="분" required
+                                    min="0" max="59" step="1" style="appearance: none;">
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="mb-3 ms-3" style="max-width: 50%;">
+                            <label for="genre" class="form-label">장르</label>
+                            <select class="form-select" id="genre" required>
+                                <option selected>장르 선택</option>
+                                <option value="액션">액션</option>
+                                <option value="코미디">코미디</option>
+                                <option value="드라마">드라마</option>
+                                <option value="호러">호러</option>
+                                <option value="SF">SF</option>
+                            </select>
+                            <button type="button" id="addGenre" class="btn btn-success mt-2">추가</button>
+                        </div>
+                        
+                        <!-- 선택된 장르 표시 영역 추가 -->
+                        <div id="selectedGenres" class="d-flex flex-wrap mt-2 ms-3"></div>
+                        
+                        <div class="mb-5 ms-3 mt-4" style="max-width: 50%;">
+                            <label class="form-label">연령 등급</label>
+                            <select class="form-select" id="ageRatingSelect" required disabled>
+                                <option selected>연령 등급 선택</option>
+                                <option value="전체 이용가">전체 이용가</option>
+                                <option value="12세">12세</option>
+                                <option value="15세">15세</option>
+                                <option value="19세">19세</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 ms-3" style="max-width: 30%; margin-top: -2.5vh;">
+                            <label for="movieVideo" class="form-label">영상 업로드</label>
+                            <input class="form-control" type="file" id="movieVideo" accept="video/*" required>
+                        </div>
+                        <div class="d-flex justify-content-center" style=" margin-bottom: 3vh; margin-top: 5vh;">
+                            <button type="submit" class="btn btn-success btn-lg me-5" data-bs-toggle="modal" data-bs-target="#confirmationModal">저장</button>
+                            <button type="button" class="btn btn-danger btn-lg" onclick="resetForm()">취소</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </main>
+    <script src="../js/alert.js"></script>
+    <script src="../js/hover.js"></script>
+    <script src="../js/genre.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/cast.js"></script>
+    <script src="../js/movieDetails.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+
+
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/reserve.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- jQuery CDN 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+
+</head>
+<body>
+
+<!-- 헤더 -->
+<header>
+    <!-- Header Section -->
+    <div style="background-color: rgb(0, 12, 26)">
+        <nav id="nav1" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Centered Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 100%;
+              ">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto" style="
+                  list-style: none;
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: center;
+                  padding: 0;
+                  margin: 0;
+                  font-size: 25px;
+                ">
+                <li class="nav-item"><a class="nav-link" href="#">영화</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">예매</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">극장</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img style="
+                        width: 200px;
+                        height: 140px;
+                        margin: 0px;
+                        padding: 0px;
+                      " src="../img/ITN MOVIES.jfif" alt="itn movies" /></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">이벤트</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">스토어</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">혜택</a></li>
+              </ul>
+            </div>
+            <!-- Login and Support Links -->
+            <ul class="nav-login" style="padding-top: 5px; font-size: 15px; position: absolute">
+              <a href="#" class="nav-item">고객센터</a>
+              <a href="#" class="nav-item">로그인</a>
+              <a href="#" class="nav-item">회원가입</a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+</header>
+
+
+<main>
+                  <!-- 빠른예매 영역 TITLE -->   
+                  <div class="til-util"><h4><b>빠른예매</b></h4></div>
+
+                  <!-- 예매 날짜 선택 영역 -->
+                  <div class="date-selection">
+                    <!-- <button id="time-button-left" class="time-button"><img src="../img/back-button.png" width="15" height="30"></button> -->
+                    <ul class="nav justify-content-center nav-fill date-list">
+                        <!-- <li class="nav-item">
+                            <a class="date-item active" href="#">01/월</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="date-item" href="#">02/화</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="date-item" href="#">03/수</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="date-item" href="#">04/목</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="date-item" href="#">05/금</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="date-item" href="#">06/토</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="date-item" href="#">07/일</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="date-item" href="#">08/월</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="date-item" href="#">09/화</a>
+                        </li>-->
+                        <!-- <li class="nav-item">
+                          <a class="date-item" href="#">09/화</a>
+                      </li>  -->
+                      
+                      <li class="nav-item">
+                        <div class="custom-date-picker">
+                          <input
+                          type="text"
+                          placeholder="날짜를 선택해주세요."
+                          id="dateSelect"
+                          readonly
+                          />
+                          <div class="calendar-icon" onclick="toggleCalendar()"><img src="../img/Date.jpg.png" width="30"></div>
+                          <div class="calendar" id="calendar">
+                              <div class="calendar-header">
+                                  <button class="month-button" onclick="prevMonth()">❮</button>
+                                  <span id="currentMonth"></span>
+                                  <button class="month-button" onclick="nextMonth()">❯</button>
+                              </div>
+                              <div class="days-of-week">
+                                  <span>SUN</span>
+                                  <span>MON</span>
+                                  <span>TUE</span>
+                                  <span>WED</span>
+                                  <span>THU</span>
+                                  <span>FRI</span>
+                                  <span>SAT</span>
+                              </div>
+                              <div class="days" id="days"></div>
+                          </div>
+                      </div>
+                    </li>
+                      
+
+                    </ul>
+                    <!-- <button id="time-button-right" class="time-button"><img src="../img/front-button.png" width="15" height="30"></button> -->
+                </div>
+                
+                
+                
+                <div class="reservation-container">
+                
+                <!-- 영화 영역 -->
+                <div class="movie-reserve-area"> 
+                <div><p class="title1">영화</p></div>
+                
+                <!-- 영화:버튼 -->
+                <div class="movie-all">
+                <div class="movie-select-button" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn custom-button" for="btnradio1"> <p id="movie-text">전체</p></label>
+                </div>
+                </div>
+                
+                <!-- 영화 리스트! -->
+                <div class="movie-list">
+                
+                
+                <c:forEach var="movie" items="${movies}">
+                <li class="movie-item">${movie.movieTitle}</li> <!-- DB에서 가져온 영화 제목 -->
+                </c:forEach>
+                <li class="movie-item">${movie.movieTitle}</li>
+                <li class="movie-item">${movie.movieTitle}</li>
+                <li class="movie-item">${movie.movieTitle}</li>
+                <li class="movie-item">${movie.movieTitle}</li>
+                <li class="movie-item">${movie.movieTitle}</li>
+                <li class="movie-item">${movie.movieTitle}</li>
+                <li class="movie-item">${movie.movieTitle}</li>
+                <li class="movie-item">${movie.movieTitle}</li>
+
+                
+                
+                 <!--  <li class="list-group-item movie-item">베테랑 2</li> -->
+                
+                
+                </div>
+                
+                </div>
+                
+                
+                
+                <!-- 극장 선택 영역 -->
+                <div class="theater-choice">
+                
+                <!-- 극장 TITLE -->
+                <div>
+                <p class="title2">극장</p>
+                </div>
+                
+                <div class="theater-container">
+                
+                <!-- 극장 버튼-->
+                <div class="theater-btn-container">
+                <div class="theater-menu">
+                    <input type="radio" class="btn-check" name="theater-radio" id="theater1" autocomplete="off" checked>
+                    <label class="btn custom-button" for="theater1" id="theater-bt"><p class="theater-text">전체</p></label>
+                </div>
+                </div>
+                
+                <div class="theater-list-container">
+                <div class="theater-list">
+                    <ul class="list-group list-group-flush">
+                    <c:forEach var="theater" items="${theaters}">
+                    <c:if test="${theater.theaterArea == '서울'}">
+                <li class="theater-itemS">${theater.theaterArea}</li> <!-- DB에서 가져온 영화 제목 -->
+                  </c:if>
+                  </c:forEach>
+                
+                <c:forEach var="theater" items="${theaters}">
+                <c:if test="${theater.theaterArea == '인천'}">
+                <li class="theater-itemI">${theater.theaterArea}</li> <!-- DB에서 가져온 영화 제목 -->
+                 </c:if>
+                </c:forEach>
+                
+                <c:forEach var="theater" items="${theaters}">
+                <c:if test="${theater.theaterArea == '부산'}">
+                <li class="theater-itemB">${theater.theaterArea}</li> <!-- DB에서 가져온 영화 제목 -->
+                 </c:if>
+                </c:forEach>
+                
+                    </ul>
+                </div>
+                
+                
+                
+                
+                
+                <div class="theater-list2" style = "display:none;">
+                  <ul class="list-group list-group-flush">
+                
+                 <c:forEach var="theater" items="${theaterTitles}">
+                                
+                                    <li class=" theater-item2">${theater.theaterTitle}</li>
+                                
+                            </c:forEach>
+                <!--       <li class="list-group-item theater-item2">서울</li>
+                      <li class="list-group-item theater-item2">서울</li> -->
+                  </ul>
+                </div>
+                
+                 <div class="theater-list3" style = "display:none;">
+                <ul class="list-group list-group-flush">
+                   <c:forEach var="theater" items="${theaterTitles}">
+                             
+                                    <li class="theater-item2">${theater.theaterTitle}</li>
+                                
+                            </c:forEach>
+                   <!-- <li class="list-group-item theater-item2">인천</li>
+                    <li class="list-group-item theater-item2">인천</li>-->
+                </ul>
+                </div>
+                
+                <div class="theater-list4" style = "display:none;">
+                <ul class="list-group list-group-flush">
+                  <c:forEach var="theater" items="${theaterTitles}">
+                                
+                                    <li class="theater-item2">${theater.theaterTitle}</li>
+                                
+                            </c:forEach>
+                  <!--<li class="list-group-item theater-item2">부산</li>
+                  <li class="list-group-item theater-item2">부산</li>-->
+                </ul>
+                </div> 
+                
+                </div>
+                
+                
+                </div>
+                
+                
+                </div>
+                
+                 <!-- 날짜 선택 영역 -->
+                <div class="time-choice"> 
+                
+                  <div><p class="title3">시간</p></div>
+                
+                  <!-- 시간(영화) -->
+                  <div class="time-select" style="display: none;">
+                      <ol class="list-group">
+                         <c:forEach var="time" items="${movies}">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold time-start">${time.startTime}</div>
+                                    <div class="time-end">~${time.endTime}</div>
+                                </div>
+                                <div class="extra-info">
+                                    <div class="movie-title">${time.movieTitle}</div>
+                                    <div class="movie-theater">${time.theaterNum}관</div>
+                                </div>
+                                <span class="badge bg-secondary rounded-pill">99/99</span> <!-- 하드코딩된 좌석 수 -->
+                            </li>
+                        </c:forEach>
+                          
+                
+                          <!-- <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                              <div class="fw-bold time-start">09:50</div>
+                              <div class="time-end">~11:42</div>
+                            </div>
+                            
+                              추가 정보: 영화 제목과 종류
+                          <div class="extra-info">
+                            <div class="movie-title">PLAVE FAN CONCERT [Hello, Asterum!] ENCORE: LIVE VIEWING</div>
+                            <div class="movie-theater">1관</div>
+                          </div>
+                
+                            뱃지
+                            <span class="badge bg-secondary rounded-pill">97/97</span>
+                          </li> -->
+                        </ol>
+                
+                  </div>
+                </div>
+                
+                </div>
+</footer>
+ <!-- Bootstrap JS 추가 -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="../js/reserve.js"></script>
+</body>
+</html>
